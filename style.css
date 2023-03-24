@@ -99,7 +99,7 @@ li {
 }
 
 .headline h1 {
-  color: #FF6B00;
+  color: #ff6b00;
   width: 320px;
   height: 5px;
   font-family: 'Crete Round', serif;
@@ -156,6 +156,9 @@ li {
 }
 
 /* works section */
+
+button:enabled { background-color: #ff6b00; }
+
 .grid-container {
   display: grid;
   grid-template-rows: repeat(auto-fill,);
@@ -328,7 +331,7 @@ li {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #FFF;
+  color: #fff;
   padding: 12px;
   gap: 10px;
   width: 135px;
@@ -343,8 +346,6 @@ li {
   line-height: 24px;
   border: none;
 }
-
-.card-body button:enabled {background-color: #FF6B00;}
 
 /* card section */
 .card {
@@ -459,8 +460,6 @@ li {
   border: none;
 }
 
-.card button:enabled {background-color: #FF6B00;}
-
 /* about section */
 .about {
   display: grid;
@@ -528,8 +527,6 @@ li {
   color: #fff;
   position: relative;
 }
-
-.about button:enabled {background-color: #FF6B00;}
 
 /* skills section */
 .skill {
