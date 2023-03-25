@@ -337,6 +337,12 @@ li {
 
 .card-body-button:hover {
   background-color: #ff6b00;
+  border: 1px solid white;
+}
+
+.card-body-button:active {
+  background-color: #ff6b00;
+  border: 1px solid white;
 }
 
 /* card section */
@@ -448,7 +454,13 @@ li {
 }
 
 .card-button:hover {
-  background: #ff6b00;
+  background-color: #ff6b00;
+  border: 1px solid white;
+}
+
+.card-button:active {
+  background-color: #ff6b00;
+  border: 1px solid white;
 }
 
 /* about section */
@@ -513,7 +525,13 @@ li {
 }
 
 .about-button:hover {
-  background: #ff6b00;
+  background-color: #ff6b00 !important;
+  border: 1px solid white !important;
+}
+
+.about-button:active {
+  background-color: #ff6b00 !important;
+  border: 1px solid white !important;
 }
 
 /* skills section */
