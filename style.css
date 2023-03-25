@@ -156,9 +156,6 @@ li {
 }
 
 /* works section */
-
-button:enabled { background-color: #ff6b00; }
-
 .grid-container {
   display: grid;
   grid-template-rows: repeat(auto-fill,);
@@ -324,27 +321,22 @@ button:enabled { background-color: #ff6b00; }
   flex-grow: 0;
 }
 
-.card-body button {
+.card-body-button {
   background: #ff6b00;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
   padding: 12px;
-  gap: 10px;
-  width: 135px;
   height: 48px;
   flex: none;
   order: 3;
   flex-grow: 0;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  line-height: 24px;
   border: none;
+}
+
+.card-body-button:hover {
+  background-color: #ff6b00;
 }
 
 /* card section */
@@ -440,11 +432,8 @@ button:enabled { background-color: #ff6b00; }
   flex-grow: 0;
 }
 
-.card button {
+.card-button {
   background: #ff6b00;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   letter-spacing: 0.03em;
   color: #fff;
   padding: 17px;
@@ -452,12 +441,14 @@ button:enabled { background-color: #ff6b00; }
   flex: none;
   order: 3;
   flex-grow: 0;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   border: none;
+}
+
+.card-button:hover {
+  background: #ff6b00;
 }
 
 /* about section */
@@ -467,12 +458,14 @@ button:enabled { background-color: #ff6b00; }
   background-color: #1c1a19;
   justify-content: center;
   text-align: left;
-  padding: 161px 24px;
+  padding: 100px 24px;
   gap: 24px;
   background-position: right bottom;
   background-size: 140px;
   background-repeat: no-repeat;
   position: relative;
+  margin-top: 100px;
+  padding-bottom: 200px;
 }
 
 .about h2 {
@@ -505,12 +498,7 @@ button:enabled { background-color: #ff6b00; }
   flex-grow: 0;
 }
 
-.about button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
+.about-button {
   width: 156px;
   height: 48px;
   background: #ff6b00;
@@ -518,14 +506,14 @@ button:enabled { background-color: #ff6b00; }
   order: 2;
   flex-grow: 0;
   border: none;
-  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 17px;
-  line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: center;
   color: #fff;
-  position: relative;
+}
+
+.about-button:hover {
+  background: #ff6b00;
 }
 
 /* skills section */
