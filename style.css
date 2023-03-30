@@ -612,11 +612,11 @@ textarea:hover {
 }
 
 input {
-  border-bottom: 1px solid #dbd8d7;
-  width: 306px;
+  width: 327px;
   height: 48px;
   border: none;
   padding-left: 10px;
+  border-bottom: 1px solid #dbd8d7;
 }
 
 input.button {
