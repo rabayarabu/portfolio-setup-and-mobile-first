@@ -636,7 +636,6 @@ input.button {
 
 input.button:enabled {
   background-color: #ff6b00;
-  border: 1px solid white;
 }
 
 .contact-form ul {
