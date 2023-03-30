@@ -634,12 +634,7 @@ input.button {
   margin-top: 15px;
 }
 
-input.button:hover {
-  background-color: #ff6b00;
-  border: 1px solid white;
-}
-
-input.button:active {
+input.button:enabled {
   background-color: #ff6b00;
   border: 1px solid white;
 }
