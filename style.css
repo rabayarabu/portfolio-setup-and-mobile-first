@@ -478,31 +478,34 @@ body {
     margin-top: 100px;
   }
 
-  .frame1 {
+  .frame {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 8px 12px;
     gap: 12px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 43px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
   }
 
-  .frame2 ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Inter", sans-serif;
-    line-height: 43px;
-    gap: 8px;
-    color: #fff;
-    font-weight: 400;
-    font-size: 22px;
+  .skills img {
+    width: 18px;
+    height: 18px;
   }
 
   .devider2 {
@@ -815,6 +818,16 @@ body {
     display: none;
   }
 
+  section.skill {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+  }
+
+  ul.frame {
+    align-items: flex-start;
+  }
+
   article#card1 {
     display: flex;
     flex-direction: column-reverse;
@@ -834,7 +847,7 @@ body {
     height: 400px;
     margin-top: 55px;
     gap: 12px;
-    background-image: url(Images/Mask\ Group\ \(1\) .png);
+    background-image: url(Images/Mask\ Group\ \(1\).png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -846,7 +859,7 @@ body {
     height: 400px;
     margin-top: 55px;
     gap: 12px;
-    background-image: url(Images/desktopImg/Img\ Placeholder\ \(1\) .png);
+    background-image: url(Images/desktopImg/Img\ Placeholder\ \(1\).png);
     background-repeat: no-repeat;
     background-position: center;
   }
