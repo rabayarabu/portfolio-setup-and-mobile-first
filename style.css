@@ -48,7 +48,7 @@ body {
   .introduction {
     overflow: hidden;
     text-align: left;
-    padding: 100px 20px;
+    padding: 242px 20px;
   }
 
   .headline h1 {
@@ -165,6 +165,7 @@ body {
   }
 
   .css {
+    float: left;
     padding: 10px 12px;
     width: 55px;
     height: 40px;
@@ -206,6 +207,7 @@ body {
     flex: none;
     order: 3;
     flex-grow: 0;
+    float: right;
   }
 
   .card-body-button {
@@ -308,6 +310,7 @@ body {
     flex: none;
     order: 0;
     flex-grow: 0;
+    float: left;
   }
 
   .list2 {
@@ -328,6 +331,7 @@ body {
     flex: none;
     order: 2;
     flex-grow: 0;
+    float: right;
   }
 
   .card-button {
@@ -392,7 +396,7 @@ body {
     background-color: #1c1a19;
     justify-content: center;
     text-align: left;
-    padding: 100px 24px;
+    padding: 100px 55px;
     gap: 24px;
     background-position: right bottom;
     background-size: 140px;
@@ -610,8 +614,10 @@ body {
     order: 5;
   }
 
-  .social_icon {
-    padding: 10px;
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
 
   #menu_list {
@@ -770,7 +776,9 @@ body {
 
   ul#menu_list {
     display: flex;
-    padding-right: 40px 40px 40px 40px;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 110px;
   }
 
   article.grid-container {
@@ -803,6 +811,13 @@ body {
     max-width: 600px;
   }
 
+  img.devider1 {
+    margin-top: 44px;
+    margin-bottom: 82px;
+    width: 600px;
+    margin-left: 10px;
+  }
+
   .containers {
     max-width: 1250px;
     display: grid;
@@ -821,11 +836,38 @@ body {
   section.skill {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 165px;
   }
 
   ul.frame {
     align-items: flex-start;
+  }
+
+  section.contact-form {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 130px 0;
+    gap: 24px;
+  }
+
+  section.contact-form p {
+    width: 355px;
+    margin-left: 80px;
+  }
+
+  fieldset {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  input {
+    width: 600px;
+    margin-left: 60px;
+  }
+
+  textarea {
+    width: 600px;
+    margin-left: 60px;
   }
 
   article#card1 {
@@ -859,7 +901,7 @@ body {
     height: 400px;
     margin-top: 55px;
     gap: 12px;
-    background-image: url(Images/desktopImg/Img\ Placeholder\ \(1\).png);
+    background-image: url(Images/desktopImg/Mask\ Group\ \(2\).png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -904,6 +946,14 @@ body {
 
   section.about p {
     width: 30%;
+  }
+
+  .navbar a {
+    margin-left: 35px;
+  }
+
+  .navbar h1 {
+    margin-left: 60px;
   }
 
   #card4 h5 {
@@ -1023,6 +1073,8 @@ body {
   }
 
   article#card3 h5 {
+    display: flex;
+    align-items: center;
     margin-top: 137px;
   }
 }
