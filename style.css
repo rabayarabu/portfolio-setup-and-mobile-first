@@ -450,12 +450,7 @@ body {
     color: #fff;
   }
 
-  .about-button:hover {
-    background-color: #ff6b00 !important;
-    border: 1px solid white !important;
-  }
-
-  .about-button:active {
+  .about-button:enabled {
     background-color: #ff6b00 !important;
     border: 1px solid white !important;
   }
