@@ -636,9 +636,9 @@ input.button {
 }
 
 .button:hover {
-  background: #FFF5E1;
-  border: 1px solid #F55800;
-  color: #F55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .contact-form ul {
