@@ -79,6 +79,7 @@ body {
   /* works section */
   .grid-container {
     max-width: 1250px;
+    padding: 10px;
   }
 
   div.projects {
@@ -97,10 +98,9 @@ body {
     margin-top: 100px;
   }
 
-  /*
   .devider1 {
     margin-bottom: 70px;
-  } */
+  }
 
   .card-body h5 {
     display: flex;
@@ -131,7 +131,6 @@ body {
   }
 
   .card-body p {
-    width: 337px;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -517,18 +516,6 @@ body {
     width: 100%;
   }
 
-  .devider1 {
-    display: none;
-  }
-
-  /* .contact-form {
-    display: flex;
-    flex-direction: column;
-    padding: 80px 24px 0 24px;
-    gap: 10px;
-    margin-bottom: 50px;
-  } */
-
   .contact-form p {
     display: flex;
     flex-direction: column;
@@ -826,8 +813,11 @@ body {
   .containers {
     max-width: 1250px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    justify-content: center;
+    align-content: center;
+    margin: auto auto;
   }
 
   div.title {
