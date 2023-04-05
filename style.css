@@ -14,15 +14,13 @@ body {
   /* navbar styles */
   .navbar {
     width: 100%;
-    height: auto;
-    padding: 10px 12px;
-    left: 0%;
-    right: 0%;
+    height: 100px;
+    padding: 10px 16px;
     background: #3c3a39;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 100px;
+    
   }
 
   .navbar a {
@@ -31,24 +29,21 @@ body {
     font-weight: 10px;
     font-size: 15px;
     line-height: 24px;
-    text-align: center;
     color: white;
-    margin-left: 100px;
   }
 
   /* headline styles */
   .headline {
     background-image: url(Images/Group.png);
-    background-position-y: 120%;
+    background-position-y: -10%;
     background-color: #1c1a19;
     background-position: right bottom;
     background-repeat: no-repeat;
   }
 
   .introduction {
-    overflow: hidden;
     text-align: left;
-    padding: 242px 20px;
+    padding: 100px 20px;
   }
 
   .headline h1 {
@@ -73,14 +68,13 @@ body {
   }
 
   .headline p {
-    width: 411px;
-    height: 68px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 30px;
     color: #fff;
+    margin-top: 10px;
   }
 
   /* works section */
@@ -414,7 +408,7 @@ body {
     color: #ff6b00;
     font-family: "Crete Round", sans-serif;
     font-weight: 400;
-    font-size: 72px;
+    font-size: 60px;
     line-height: 88px;
     letter-spacing: 0.37px;
     flex: none;
@@ -521,6 +515,7 @@ body {
     flex-direction: column;
     padding: 80px 24px 0 24px;
     gap: 10px;
+    margin-bottom: 50px;
   }
 
   .contact-form p {
@@ -591,10 +586,11 @@ body {
     order: 3;
     margin-top: 15px;
   }
-
-  input.button:enabled {
-    background-color: #ff6b00;
-  }
+.button:hover {
+  background: #FFF5E1;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
 
   .contact-form ul {
     display: flex;
@@ -606,13 +602,14 @@ body {
   img.footer {
     display: flex;
     justify-content: center;
-    order: 5;
+    height: 1px;
   }
 
   .social-media {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-block: 30px ;
   }
 
   #menu_list {
@@ -734,30 +731,20 @@ body {
   section.headline {
     background-image: url(Images/Illustration-header@2x.svg);
     background-repeat: no-repeat;
-    background-position-y: 50%;
+    background-position: right;
+    background-size: 580px;
   }
 
   .introduction {
-    display: grid;
-    grid-template-columns: 3rem 3rem 3rem;
-    grid-template-rows: 9rem;
+    position: relative;
+    padding: 200px 20px;
   }
-
-  .headline h1 {
-    grid-column: 3;
-    height: 100px;
-  }
-
-  .headline h4 {
-    grid-row: 2;
-    grid-column: 3;
-  }
-
-  .headline p {
-    grid-row: 2;
-    grid-column: 3;
-    margin-top: 40px;
-  }
+.title-header {
+  max-width: 400px;
+  position: absolute;
+  left: 7rem;
+}
+ 
 
   ul#image-icons {
     grid-row: 1;
@@ -827,7 +814,11 @@ body {
   article.card {
     display: none;
   }
-
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
   section.skill {
     display: flex;
     justify-content: center;
@@ -839,19 +830,21 @@ body {
   }
 
   section.contact-form {
-    display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 130px 0px;
-gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 130px 0px;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 .footer {
   width: 100%;
   margin-bottom: 30px;
 }
   section.contact-form p {
-    width: 355px;
-    margin-left: 80px;
+    width: 328px;
+    text-align: left;
+    margin-left: 180px;
   }
 
   fieldset {
@@ -861,12 +854,10 @@ gap: 24px;
 
   input {
     width: 600px;
-    margin-left: 60px;
   }
 
   textarea {
     width: 600px;
-    margin-left: 60px;
   }
 
   article#card1 {
@@ -879,6 +870,7 @@ gap: 24px;
     background-image: url(Images/Mask\ Group.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 
   article#card2 {
@@ -911,10 +903,11 @@ gap: 24px;
     align-items: center;
     height: 400px;
     margin-top: 55px;
-    gap: 12px;
+    gap: 15px;
     background-image: url(Images/backgroundImg.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 
   article.card h5 {
@@ -946,7 +939,9 @@ gap: 24px;
   section.about p {
     width: 30%;
   }
-
+.navbar {
+  height: 50px;
+}
   .navbar a {
     margin-left: 35px;
   }
