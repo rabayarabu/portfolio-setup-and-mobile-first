@@ -558,7 +558,7 @@ body {
 
   textarea:hover {
     border: 1px solid #ff6b00;
-    background-image: url(Images/Icon\ -\ Resizer\ Handle.png);
+    background-image: url(Images/Icon-ResizerHandle.png);
     background-repeat: no-repeat;
     mix-blend-mode: normal;
   }
