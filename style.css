@@ -20,7 +20,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
   }
 
   .navbar a {
@@ -586,11 +585,12 @@ body {
     order: 3;
     margin-top: 15px;
   }
-.button:hover {
-  background: #FFF5E1;
-  color: #ff6b00;
-  border: 1px solid #ff6b00;
-}
+
+  .button:hover {
+    background: #fff5e1;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
+  }
 
   .contact-form ul {
     display: flex;
@@ -609,7 +609,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-block: 30px ;
+    margin-block: 30px;
   }
 
   #menu_list {
@@ -739,12 +739,12 @@ body {
     position: relative;
     padding: 200px 20px;
   }
-.title-header {
-  max-width: 400px;
-  position: absolute;
-  left: 7rem;
-}
- 
+
+  .title-header {
+    max-width: 400px;
+    position: absolute;
+    left: 7rem;
+  }
 
   ul#image-icons {
     grid-row: 1;
@@ -814,11 +814,13 @@ body {
   article.card {
     display: none;
   }
+
   .social-media {
     display: flex;
     justify-content: center;
     gap: 10px;
   }
+
   section.skill {
     display: flex;
     justify-content: center;
@@ -832,15 +834,17 @@ body {
   section.contact-form {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 130px 0px;
+    padding: 130px 0;
     gap: 24px;
     max-width: 1200px;
     margin: 0 auto;
   }
-.footer {
-  width: 100%;
-  margin-bottom: 30px;
-}
+
+  .footer {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
   section.contact-form p {
     width: 328px;
     text-align: left;
@@ -880,7 +884,7 @@ body {
     height: 400px;
     margin-top: 55px;
     gap: 12px;
-    background-image: url(Images/Mask\ Group\ \(1\).png);
+    background-image: url(Images/Mask\ Group\ \(1\) .png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -892,7 +896,7 @@ body {
     height: 400px;
     margin-top: 55px;
     gap: 12px;
-    background-image: url(Images/desktopImg/Mask\ Group\ \(2\).png);
+    background-image: url(Images/desktopImg/Mask\ Group\ \(2\) .png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -939,9 +943,11 @@ body {
   section.about p {
     width: 30%;
   }
-.navbar {
-  height: 50px;
-}
+
+  .navbar {
+    height: 50px;
+  }
+
   .navbar a {
     margin-left: 35px;
   }
