@@ -946,7 +946,7 @@ body {
   }
 
   section.about {
-    background-image: url(Images/desktopImg/illustration-about\ me.svg);
+    background-image: url(Images/desktopImg/illustration-about\me.svg);
     background-repeat: no-repeat;
     background-size: 750px;
     background-position: right;
