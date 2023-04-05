@@ -635,13 +635,10 @@ input.button {
   margin-top: 15px;
 }
 
-input.button:hover {
-  background: #ff6b00;
-  border: 1px solid #fff;
-}
-
-input.button:enabled {
-  background: #ff6b00;
+.button:hover {
+  background: #FFF5E1;
+  border: 1px solid #F55800;
+  color: #F55800;
 }
 
 .contact-form ul {
