@@ -639,9 +639,11 @@ input.button:hover {
   background: #ff6b00;
   border: 1px solid #fff;
 }
+
 input.button:enabled {
   background: #ff6b00;
 }
+
 .contact-form ul {
   display: flex;
   justify-content: center;
