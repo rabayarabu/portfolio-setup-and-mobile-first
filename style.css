@@ -563,6 +563,7 @@
   flex-direction: column;
   padding: 80px 24px 0 24px;
   gap: 10px;
+  width: 363px;
 }
 
 .contact-form p {
@@ -634,8 +635,10 @@ input.button {
   margin-top: 15px;
 }
 
-input.button:enabled {
-  background-color: #ff6b00;
+.button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .contact-form ul {
