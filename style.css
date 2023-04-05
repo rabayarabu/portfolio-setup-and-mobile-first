@@ -839,12 +839,16 @@ body {
   }
 
   section.contact-form {
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 130px 0;
-    gap: 24px;
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 130px 0px;
+gap: 24px;
   }
-
+.footer {
+  width: 100%;
+  margin-bottom: 30px;
+}
   section.contact-form p {
     width: 355px;
     margin-left: 80px;
