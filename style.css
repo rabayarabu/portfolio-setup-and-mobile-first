@@ -97,9 +97,10 @@ body {
     margin-top: 100px;
   }
 
+  /*
   .devider1 {
     margin-bottom: 70px;
-  }
+  } */
 
   .card-body h5 {
     display: flex;
@@ -125,18 +126,17 @@ body {
     align-items: flex-start;
     padding: 0;
     gap: 12px;
-    width: 327px;
+    max-width: 500px;
     height: 307px;
   }
 
   .card-body p {
-    width: 327px;
-    height: 147px;
+    width: 337px;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 34px;
     color: #091e42;
   }
 
@@ -445,7 +445,6 @@ body {
 
   .about-button:enabled {
     background-color: #ff6b00 !important;
-    border: 1px solid white !important;
   }
 
   /* skills section */
@@ -482,14 +481,14 @@ body {
     font-size: 22px;
     line-height: 43px;
   }
-  
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  padding: 80px 24px 0 24px;
-  gap: 10px;
-  width: 363px;
-}
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 24px 0 24px;
+    gap: 10px;
+    width: 100%;
+  }
 
   .skills {
     display: flex;
@@ -515,15 +514,20 @@ body {
     position: relative;
     background: #1c1a19;
     justify-content: space-around;
+    width: 100%;
   }
 
-  .contact-form {
+  .devider1 {
+    display: none;
+  }
+
+  /* .contact-form {
     display: flex;
     flex-direction: column;
     padding: 80px 24px 0 24px;
     gap: 10px;
     margin-bottom: 50px;
-  }
+  } */
 
   .contact-form p {
     display: flex;
@@ -564,11 +568,11 @@ body {
     margin-top: 10px;
   }
 
-.button:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
-}
+  .button:hover {
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    color: #f55800;
+  }
 
   textarea:hover {
     border: 1px solid #ff6b00;
@@ -600,11 +604,11 @@ body {
     margin-top: 15px;
   }
 
-  .button:hover {
+  /* .button:hover {
     background: #fff5e1;
     color: #ff6b00;
     border: 1px solid #ff6b00;
-  }
+  } */
 
   .contact-form ul {
     display: flex;
@@ -747,6 +751,7 @@ body {
     background-repeat: no-repeat;
     background-position: right;
     background-size: 580px;
+    margin-bottom: 80px;
   }
 
   .introduction {
@@ -780,8 +785,8 @@ body {
   article.grid-container {
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
-    max-width: 1000px;
+    margin: 5px auto;
+    max-width: 1200px;
   }
 
   article.grid-container h2 {
@@ -795,9 +800,13 @@ body {
     height: 0;
   }
 
+  .devider2 {
+    display: none;
+  }
+
   div.projects {
     max-width: 1250px;
-    margin: 10px auto 20px auto;
+    margin: -31px auto 20px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
@@ -845,13 +854,14 @@ body {
     align-items: flex-start;
   }
 
-  section.contact-form {
+  .contact-form {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 130px 0;
+    padding: 50px 0;
     gap: 24px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 100px auto;
+    justify-content: space-between;
   }
 
   .footer {
@@ -862,7 +872,8 @@ body {
   section.contact-form p {
     width: 328px;
     text-align: left;
-    margin-left: 180px;
+
+    /* margin-left: 180px; */
   }
 
   fieldset {
@@ -871,11 +882,11 @@ body {
   }
 
   input {
-    width: 600px;
+    width: 100%;
   }
 
   textarea {
-    width: 600px;
+    width: 100%;
   }
 
   article#card1 {
@@ -885,7 +896,7 @@ body {
     height: 400px;
     margin-top: 55px;
     gap: 12px;
-    background-image: url(Images/Mask\ Group.png);
+    background-image: url(Images/MaskGroup.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -947,7 +958,8 @@ body {
   section.about {
     background-image: url(Images/desktopImg/illustration-about\ me.svg);
     background-repeat: no-repeat;
-    background-size: 800px;
+    background-size: 750px;
+    background-position: right;
   }
 
   section.about h2 {
@@ -955,7 +967,7 @@ body {
   }
 
   section.about p {
-    width: 30%;
+    width: 35%;
   }
 
   .navbar {
