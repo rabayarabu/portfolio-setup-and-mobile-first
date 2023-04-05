@@ -482,6 +482,14 @@ body {
     font-size: 22px;
     line-height: 43px;
   }
+  
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 24px 0 24px;
+  gap: 10px;
+  width: 363px;
+}
 
   .skills {
     display: flex;
@@ -555,6 +563,12 @@ body {
     border: none;
     margin-top: 10px;
   }
+
+.button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
 
   textarea:hover {
     border: 1px solid #ff6b00;
