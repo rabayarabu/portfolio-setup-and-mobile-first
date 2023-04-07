@@ -47,11 +47,11 @@ body {
 
   .headline h1 {
     color: #ff6b00;
-    font-family: "Crete Round", serif;
+    font-family: "Crete Round", sans-serif;
     font-size: 44px;
     line-height: 64px;
     letter-spacing: 0.37px;
-    width: 214px;
+    width: 230px;
   }
 
   .headline h4 {
