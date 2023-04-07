@@ -47,11 +47,11 @@ body {
 
   .headline h1 {
     color: #ff6b00;
-    font-family: "Crete Round", serif;
+    font-family: "Crete Round", sans-serif;
     font-size: 44px;
     line-height: 64px;
     letter-spacing: 0.37px;
-    width: 214px;
+    width: 230px;
   }
 
   .headline h4 {
@@ -217,11 +217,6 @@ body {
   }
 
   .card-body-button:hover {
-    background-color: #ff6b00;
-    border: 1px solid white;
-  }
-
-  .card-body-button:active {
     background-color: #ff6b00;
     border: 1px solid white;
   }
@@ -442,8 +437,9 @@ body {
     color: #fff;
   }
 
-  .about-button:enabled {
-    background-color: #ff6b00 !important;
+  .about-button:hover {
+    background: #f4f5f7;
+    color: #f55800;
   }
 
   /* skills section */
@@ -541,6 +537,12 @@ body {
     border: none;
     gap: 20px;
     order: 2;
+
+    /* transform: translate(10px); */
+  }
+
+  fieldset:hover {
+    transform: translate(10px);
   }
 
   textarea {
@@ -767,6 +769,12 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     margin-right: 110px;
+    font-size: 15px;
+    transition-property: font-size;
+  }
+
+  .menu_link:hover {
+    font-size: 26px;
   }
 
   article.grid-container {
@@ -801,6 +809,10 @@ body {
 
   .featureImg {
     max-width: 600px;
+  }
+
+  .featureImg:hover {
+    transform: translate(10px);
   }
 
   img.devider1 {
@@ -862,8 +874,6 @@ body {
   section.contact-form p {
     width: 328px;
     text-align: left;
-
-    /* margin-left: 180px; */
   }
 
   fieldset {
@@ -877,6 +887,15 @@ body {
 
   textarea {
     width: 100%;
+  }
+
+  button.card1-button {
+    width: 393px;
+  }
+
+  button.caerd1-button:hover {
+    background-color: #ff6b00;
+    border: 1px solid white;
   }
 
   article#card1 {
@@ -966,6 +985,10 @@ body {
 
   .navbar a {
     margin-left: 35px;
+  }
+
+  .navbar a:hover {
+    transform: rotate(3.142rad);
   }
 
   .navbar h1 {
@@ -1066,18 +1089,6 @@ body {
 
   article#card1 ul {
     display: none;
-  }
-
-  button.card1-button {
-    background: #ff6b00;
-    letter-spacing: 0.03em;
-    color: #fff;
-    padding: 17px;
-    width: 370px;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    border: none;
   }
 
   article#card2 h5 {
