@@ -809,10 +809,11 @@ body {
 
   .featureImg {
     max-width: 600px;
+    transition: 2s;
   }
 
   .featureImg:hover {
-    transform: translate(10px);
+    max-width: 800px;
   }
 
   img.devider1 {
