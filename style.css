@@ -988,12 +988,16 @@ body {
     margin-left: 35px;
   }
 
-  .navbar a:hover {
+  /* .navbar a:hover {
     transform: rotate(3.142rad);
-  }
+  } */
 
   .navbar h1 {
     margin-left: 60px;
+  }
+
+  .navbar h1:hover {
+    transform: rotateY(180deg);
   }
 
   #card4 h5 {
