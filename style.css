@@ -995,9 +995,11 @@ body {
   .navbar h1 {
     margin-left: 60px;
   }
-.navbar h1:hover {
-  transform: rotateY(180deg);
-}
+
+  .navbar h1:hover {
+    transform: rotateY(180deg);
+  }
+
   #card4 h5 {
     width: 295px;
     height: 81px;
