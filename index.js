@@ -1,9 +1,10 @@
-const hamburger = document.querySelector("#menu_bar");
-const navMenu = document.querySelector("#menu_list");
+const menuItem = document.querySelector("#menu_list");
+const hamburgerIcon = document.querySelector(".hamburger");
+const closeIcon = document.querySelector(".close");
+const menu = document.querySelectorAll(".menu_link");
 
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-    hamburger.toggle("active");
-    navMenu.classList.toggle("active");
-}
+hamburgerIcon.addEventListener("click", () => {
+  menuItem.classList.toggle("active");
+  hamburgerIcon.classList.toggle("hide");
+  closeIcon.classList.toggle("show");
+});
