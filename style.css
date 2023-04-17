@@ -622,10 +622,12 @@ body {
     display: none;
   }
 
-  #menu_bar {
+  i.fa-solid {
+    display: none;
+  }
+
+  i.close.show {
     display: flex;
-    flex-direction: column;
-    transition: all 0.3s ease-in-out;
   }
 
   #menu_bar img {
