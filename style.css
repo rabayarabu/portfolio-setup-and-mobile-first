@@ -44,7 +44,6 @@ i.close.show {
 }
 
 @media only screen and (min-width: 350px) {
-
   /* navbar styles */
   .navbar {
     padding: 1rem 1.5rem;
@@ -761,7 +760,6 @@ i.close.show {
 }
 
 @media only screen and (min-width: 768px) {
-
   /* headline styles */
   section.headline {
     background-image: url(Images/Illustration-header@2x.svg);
