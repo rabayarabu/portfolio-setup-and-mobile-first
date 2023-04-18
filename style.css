@@ -12,6 +12,9 @@ body {
 
 .nav {
   z-index: 10;
+  position: fixed;
+  top: 10px;
+  right: 50px;
 }
 
 .hamburger.hide {
@@ -21,13 +24,39 @@ body {
 .menu_mobile.active {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   gap: 20px;
   left: 0;
   top: 0;
   width: 100%;
   padding: 100px;
   backdrop-filter: blur(8px);
+  height: 100vh;
+  background-color: rgba(60, 58, 57, 0.9);
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  height: 100%;
+  padding: 0;
+}
+
+.menu_link {
+  border-bottom: 2px solid #f4f5f7;
+  display: block;
+  padding-bottom: 5px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff5e1;
+}
+
+.envelope {
+  display: none;
 }
 
 i.close {
@@ -538,13 +567,13 @@ i.close.show {
   }
 
   .devider2 {
-    display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
     background: #1c1a19;
     justify-content: space-around;
     width: 100%;
+    display: none;
   }
 
   .contact-form p {
@@ -769,6 +798,27 @@ i.close.show {
     margin-bottom: 80px;
   }
 
+  .menu_list {
+    gap: 5px;
+  }
+
+  .menu_mobile {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    gap: 20px;
+    width: auto;
+    padding: 100px;
+    height: auto;
+  }
+
+  #image-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+  }
+
   .introduction {
     position: relative;
     padding: 200px 20px;
@@ -795,6 +845,14 @@ i.close.show {
     transition-property: font-size;
   }
 
+  .menu_link {
+    border-bottom: none;
+  }
+
+  .envelope {
+    display: block;
+  }
+
   .hamburger {
     display: none;
   }
@@ -819,10 +877,6 @@ i.close.show {
   div.devider1 {
     width: 794px;
     height: 0;
-  }
-
-  .devider2 {
-    display: none;
   }
 
   div.projects {
@@ -1134,5 +1188,15 @@ i.close.show {
     display: flex;
     align-items: center;
     margin-top: 137px;
+  }
+
+  .devider2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    background: #1c1a19;
+    justify-content: space-around;
+    width: 100%;
   }
 }
