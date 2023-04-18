@@ -1,9 +1,27 @@
+const menu = document.querySelector(".menu_mobile");
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector("#menu_list");
+const closeIcon = document.querySelector(".close");
+const menuItem = document.querySelectorAll(".menu_link");
 
-hamburger.addEventListener("click", mobileMenu);
+// console.log(menuItem);
 
-function mobileMenu() {
-    hamburger.toggle("active");
-    navMenu.classList.toggle("active");
-}
+hamburger.addEventListener("click", () => {
+    console.log(closeIcon)
+    menu.classList.toggle("active");
+    hamburger.classList.toggle("hide");
+    closeIcon.classList.toggle("show");
+});
+
+closeIcon.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    hamburger.classList.toggle("hide");
+    closeIcon.classList.toggle("show");
+});
+
+menuItem.forEach((element) => {
+    element.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        hamburger.classList.toggle("hide");
+        closeIcon.classList.toggle("show");
+    });
+});
