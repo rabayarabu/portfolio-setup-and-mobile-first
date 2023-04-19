@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +33,6 @@ body {
   top: 0;
   width: 100%;
   padding: 100px;
-  backdrop-filter: blur(8px);
   height: 100vh;
   background-color: rgba(60, 58, 57, 0.9);
   padding-top: 40px;
@@ -799,7 +801,6 @@ i.close.show {
   background-color: #FFFFFF;
   padding: 10px;
   background-color: rgba(193, 199, 208, 0.9);
-  backdrop-filter: blur(5px);
   z-index: 10;
 }
 
@@ -818,8 +819,54 @@ i.close.show {
   margin-bottom: 20px;
 
 }
-
-
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-header h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+}
+.tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+}
+.tools-li {
+  border: 1px solid #DFE1E6;
+  padding: 5px 10px;
+  font-size: 13px;
+  margin: 10px 5px;
+}
+.top-header-p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px;
+}
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttonGroup_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 47%;
+  height: 48px;
+  color: #ffffff;
+  background: #FF6B00;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+}
 @media only screen and (min-width: 768px) {
 
   /* headline styles */
@@ -892,12 +939,6 @@ i.close.show {
 
   .menu_link:hover {
     font-size: 26px;
-  }
-
-  .top-header h2 {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
   }
 
   article.grid-container {
