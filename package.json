@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio-setup-and-mobile-first",
+  "name": "portfolio-setup-and-mobile-first",
   "version": "1.0.0",
   "description": "- [📖 About the Project](#about-project)\r   - [🛠 Built With](#built-with)\r     - [Tech Stack](#tech-stack)\r     - [Key Features](#key-features)\r   - [🚀 Live Demo](#live-demo)\r - [💻 Getting Started](#getting-started)\r   - [Setup](#setup)\r   - [Prerequisites](#prerequisites)\r   - [Install](#install)\r   - [Usage](#usage)\r   - [Run tests](#run-tests)\r   - [Deployment](#triangular_flag_on_post-deployment)\r - [👥 Authors](#authors)\r - [🔭 Future Features](#future-features)\r - [🤝 Contributing](#contributing)\r - [⭐️ Show your support](#support)\r - [🙏 Acknowledgements](#acknowledgements)\r - [❓ FAQ (OPTIONAL)](#faq)\r - [📝 License](#license)",
   "main": "index.js",
@@ -18,11 +18,14 @@
   },
   "homepage": "https://github.com/rabayarabu/Portfolio-setup-and-mobile-first#readme",
   "devDependencies": {
-    "hint": "^7.1.8",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.27.5",
+    "hint": "^2.0.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
-  },
-  "dependencies": {}
+  }
 }
