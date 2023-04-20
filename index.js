@@ -213,7 +213,7 @@ const checkLower = email.value;
 
 button.addEventListener('click', (event) => {
   event.preventDefault();
-  
+
   if (fullName.value === '') {
     messageErr.innerHTML = 'Please provide your name';
     fullName.focus();
@@ -223,7 +223,7 @@ button.addEventListener('click', (event) => {
     messageErr.innerHTML = 'Please provide email';
     email.focus();
     return false;
-  } else if (checkLower !== checkLower.toLowerCase()) {
+  } if (checkLower !== checkLower.toLowerCase()) {
     messageErr.innerHTML = 'Please use lowercase for email';
     email.focus();
     return false;
