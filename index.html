@@ -140,7 +140,7 @@
       <p>
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
       </p>
-      <form action="https://formspree.io/f/xbjezgwz" method="POST" onsubmit="return emailValidation()">
+      <form action="https://formspree.io/f/xbjezgwz" method="POST" id="contactForm">
         <fieldset>
           <label>
             <input id="name" type="text" name="user_name" placeholder="Full name" required>
@@ -150,7 +150,7 @@
           </label>
           <textarea id="textarea" name="user_message" placeholder="Write me something..." required></textarea>
           <div id="message"></div>
-          <input class="button" id="form_button" type="submit" name="submit" value="Get in touch">
+          <input class="button" id="form_button" type="submit" name="form_button" value="Get in touch">
         </fieldset>
       </form>
     </section>
