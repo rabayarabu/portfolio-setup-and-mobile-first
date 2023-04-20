@@ -827,12 +827,7 @@ i.close.show {
   }
 
   .featureImg {
-    max-width: 600px;
-    transition: 2s;
-  }
-
-  .featureImg:hover {
-    max-width: 800px;
+    max-width:100%;
   }
 
   img.devider1 {
