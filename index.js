@@ -210,15 +210,15 @@ const email = document.querySelector('#email');
 const textarea = document.querySelector('#textarea');
 const button = document.querySelector('#form_button');
 const messageErr = document.querySelector('#message');
-// const checkLower = email.value;
+const checkLower = email.value;
 
 button.addEventListener('click', (event) => {
   event.preventDefault();
-  // if(checkLower === checkLower.toLowerCase()){
-  //   messageErr.innerHTML = "Please use lowercase for email";
-  //   email.focus();
-  //   return false;
-  // }
+  if(checkLower === checkLower.toLowerCase()){
+    messageErr.innerHTML = "Please use lowercase for email";
+    email.focus();
+    return false;
+  }
   if (fullName.value === '') {
     messageErr.innerHTML = 'Please provide your name';
     fullName.focus();
