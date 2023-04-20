@@ -140,16 +140,17 @@
       <p>
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
       </p>
-      <form action="https://formspree.io/f/xbjezgwz" method="POST">
+      <form action="https://formspree.io/f/xbjezgwz" method="POST" onsubmit="return emailValidation()">
         <fieldset>
           <label>
-            <input type="text" name="user_name" placeholder="Full name" required>
+            <input id="name" type="text" name="user_name" placeholder="Full name" required>
           </label>
           <label>
-            <input type="email" name="user_email" placeholder="Email" required>
+            <input id="email" type="email" name="user_email" placeholder="Email" required>
           </label>
-          <textarea name="user_message" placeholder="Write me something..." required></textarea>
-          <input class="button" type="submit" name="submit" value="Get in touch">
+          <textarea id="textarea" name="user_message" placeholder="Write me something..." required></textarea>
+          <div id="message"></div>
+          <input class="button" id="form_button" type="submit" name="submit" value="Get in touch">
         </fieldset>
       </form>
     </section>

@@ -201,3 +201,48 @@ modal.addEventListener('click', (e) => {
 });
 
 generateProduct();
+
+
+// form validation
+const contactForm = document.querySelector('#contact_section');
+const fullName = document.querySelector('#name');
+const email = document.querySelector('#email');
+const textarea = document.querySelector('#textarea');
+const button = document.querySelector('#form_button');
+const messageErr = document.querySelector('#message');
+// const checkLower = email.value;
+
+button.addEventListener('click', (event) => {
+  event.preventDefault();
+  // if(checkLower === checkLower.toLowerCase()){
+  //   messageErr.innerHTML = "Please use lowercase for email";
+  //   email.focus();
+  //   return false;
+  // }
+  if (fullName.value === '') {
+    messageErr.innerHTML = 'Please provide your name';
+    fullName.focus();
+    return false;
+  }
+  if (email.value === '') {
+    messageErr.innerHTML = 'Please provide email';
+    email.focus();
+    return false;
+  } 
+  if (!email.value.includes('@') || !email.value.includes('.')) {
+    messageErr.innerHTML = 'Enter a valid email in Lowercase';
+    messageErr.classList.add('show');
+    email.focus();
+    return false;
+  }
+  if (textarea.value === '') {
+    messageErr.innerHTML = 'text must be within 500 characters';
+    textarea.focus();
+    return false;
+  }
+  messageErr.innerHTML = 'message sent!';
+  contactForm.submit();
+  fullName.value = '';
+  email.value = '';
+  textarea.value = '';
+});
