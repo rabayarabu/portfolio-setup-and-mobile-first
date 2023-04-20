@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -147,11 +148,12 @@ i.close.show {
   .grid-container {
     max-width: 1250px;
     padding: 10px;
+    margin-bottom: 50px;
   }
 
   div.projects {
     width: 100%;
-    margin: 10px auto 20px auto;
+    margin: 30px auto 20px auto;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -211,8 +213,7 @@ i.close.show {
     flex-direction: row;
     align-items: center;
     padding: 0;
-    gap: 12px;
-    width: 314px;
+    gap: 3px;
     height: 40px;
     background: #fff;
     font-family: "Inter", sans-serif;
@@ -224,49 +225,10 @@ i.close.show {
   }
 
   .css {
-    float: left;
     padding: 10px 12px;
-    width: 55px;
     height: 40px;
     background: #fff;
     border: 1px solid #8993a4;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .html {
-    padding: 10px 12px;
-    width: 67px;
-    height: 40px;
-    background: #fff;
-    border: 1px solid #8993a4;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-  }
-
-  .bootstrap {
-    padding: 10px 12px;
-    width: 95px;
-    height: 40px;
-    background: #fff;
-    border: 1px solid #8993a4;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-  }
-
-  .ruby {
-    padding: 10px 12px;
-    width: 61px;
-    height: 40px;
-    background: #fff;
-    border: 1px solid #8993a4;
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-    float: right;
   }
 
   .card-body-button {
@@ -281,12 +243,14 @@ i.close.show {
     font-weight: 700;
     font-size: 17px;
     border: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
-  .card-body-button:hover {
+  /* .card-body-button:hover {
     background-color: #ff6b00;
     border: 1px solid white;
-  }
+  } */
 
   /* card section */
 
@@ -366,16 +330,6 @@ i.close.show {
     font-size: 17px;
     line-height: 24px;
     border: none;
-  }
-
-  .card-button:hover {
-    background-color: #ff6b00;
-    border: 1px solid white;
-  }
-
-  .card-button:active {
-    background-color: #ff6b00;
-    border: 1px solid white;
   }
 
   /* about section */
@@ -651,6 +605,7 @@ i.close.show {
 }
 
 .popup-container {
+  font-family: 'Inter', sans-serif;
   padding: 20px;
   width: 90%;
   position: fixed;
@@ -725,6 +680,12 @@ i.close.show {
 
 .closePop {
   cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid #ff6b00;
+  background-color: #ffff;
+  color: #f55800;
 }
 
 @media only screen and (min-width: 768px) {
@@ -827,7 +788,7 @@ i.close.show {
   }
 
   .featureImg {
-    max-width: 100%;
+    width: 100%;
   }
 
   img.devider1 {
@@ -838,13 +799,23 @@ i.close.show {
   }
 
   .containers {
+    margin-bottom: 20px;
+    height: auto;
+    position: static;
+  }
+
+  .containers-body {
     max-width: 1250px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-content: center;
-    align-content: center;
-    margin: auto auto;
+    align-content: flex-start;
+    margin: 10px auto;
+
+    /* border: 2px solid red; */
+    height: 100%;
+    padding: 10px;
   }
 
   div.title {
@@ -975,8 +946,9 @@ i.close.show {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    align-items: flex-start;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
   }
 
   .buttonGroup {
@@ -991,9 +963,22 @@ i.close.show {
     width: 140px;
     color: #fff;
     background: #ff6b00;
+    font-family: "Inter", sans-serif;
     border: none;
     padding: 12px;
     font-size: 15px;
     cursor: pointer;
+  }
+
+  .btn_icon:hover {
+    display: none;
+  }
+
+  .buttonGroup_button:hover {
+    font-size: 13px;
+  }
+
+  .tools {
+    margin-bottom: 20px;
   }
 }

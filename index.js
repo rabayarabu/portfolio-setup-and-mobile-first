@@ -4,6 +4,8 @@ const closeIcon = document.querySelector('.close');
 const menuItem = document.querySelectorAll('.menu_link');
 const projectsSide = document.getElementById('projects');
 const modal = document.getElementById('popup');
+
+const containers = document.getElementById('containers');
 hamburger.addEventListener('click', () => {
   menu.classList.toggle('active');
   hamburger.classList.toggle('hide');
@@ -80,7 +82,7 @@ const arrProject = [
     nameCard: 'Multi Post Stories',
     number: 6,
     Description: "A daily selection of privately personalized reads; no account or sign-ups required,has been the industry's standard",
-    descriptionCard: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    descriptionCard: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     technology: ['html', 'bootstrap', 'ruby', 'Ruby on rails'],
     btnCard1: 'See Live',
     btnCard2: 'See Source',
@@ -97,13 +99,32 @@ function generateProduct() {
   <ul>
     ${project.technology.map((x) => `<li class="list">${x}</li>`).join('')}
   </ul>
-  <button type="button" class="card-button" id= ${project.number}>See project</button>
+  <button type="button" class="card-button p-btn" id= ${project.number}>See project</button>
 </article>
 `).join('');
 }
 
-projectsSide.addEventListener('click', (e) => {
-  if (e.target.classList.contains('card-button')) {
+const generateLatest = function () {
+  for (let i = arrProject.length - 1; i < arrProject.length; i += 1) {
+    containers.innerHTML += `
+    <div class="containers-body">
+    <img class="featureImg" src="Images/Img Placeholder.png" alt="featureimage">
+    <div class="card-body">
+      <h5>${arrProject[i].nameCard}</h5>
+      <p>
+      ${arrProject[i].descriptionCard}
+      </p>
+      <ul>
+      ${arrProject[i].technology.map((x) => `<li class="css">${x}</li>`).join('')}
+      </ul>
+      <button type="button" class="card-body-button p-btn" id="${arrProject[i].number}">See project</button>
+    </div>
+   </div>
+          `;
+  }
+};
+containers.addEventListener('click', (e) => {
+  if (e.target.classList.contains('p-btn')) {
     modal.classList.remove('hide');
     const id = parseFloat(e.target.id);
     const search = arrProject.find((x) => x.number === id);
@@ -124,9 +145,44 @@ projectsSide.addEventListener('click', (e) => {
           </p>
 
           <div class="buttonGroup">
-            <button type="button" class="buttonGroup_button">See live <img src="Images/Icon.png" alt="icon"></button>
-            <button type="button" class="buttonGroup_button">See source <img src="Images/desktopImg/Icon -GitHub.png"
-                alt="GitHubIcon"></button>
+            <button type="button" class="buttonGroup_button">See live <img src="Images/Icon.png" alt="icon" class="btn_icon"></button>
+            <button type="button" class="buttonGroup_button">See source <img src="Images/desktopImg/Icon -GitHub.png" alt="GitHubIcon" class="btn_icon"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    `;
+    }
+  }
+});
+
+generateLatest();
+
+projectsSide.addEventListener('click', (e) => {
+  if (e.target.classList.contains('p-btn')) {
+    modal.classList.remove('hide');
+    const id = parseFloat(e.target.id);
+    const search = arrProject.find((x) => x.number === id);
+    if (search !== undefined) {
+      modal.innerHTML = `
+      <div class="popup-container">
+      <div class="top-header">
+        <h2>${search.name}</h2>
+        <img src="Images/cross.png" alt="crossicon" id="closePop"></img>
+      </div>
+      <ul class="tools">
+        ${search.technology.map((x) => `<li class="tools-li">${x}</li>`).join('')}
+      </ul>
+      <div class="middle">
+        <img class="featureImg" src="Images/Img Placeholder.png" alt="featureimage">
+        <div class="center">
+          <p class="top-header-p">${search.descriptionCard}
+          </p>
+
+          <div class="buttonGroup">
+            <button type="button" class="buttonGroup_button">See live <img src="Images/Icon.png" alt="icon" class="btn_icon"></button>
+            <button type="button" class="buttonGroup_button">See source <img src="Images/desktopImg/Icon -GitHub.png" alt="GitHubIcon" class="btn_icon"></button>
           </div>
         </div>
       </div>
