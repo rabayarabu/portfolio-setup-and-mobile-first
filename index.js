@@ -202,7 +202,6 @@ modal.addEventListener('click', (e) => {
 
 generateProduct();
 
-
 // form validation
 const contactForm = document.querySelector('#contact_section');
 const fullName = document.querySelector('#name');
@@ -214,8 +213,8 @@ const checkLower = email.value;
 
 button.addEventListener('click', (event) => {
   event.preventDefault();
-  if(checkLower === checkLower.toLowerCase()){
-    messageErr.innerHTML = "Please use lowercase for email";
+  if (checkLower === checkLower.toLowerCase()) {
+    messageErr.innerHTML = 'Please use lowercase for email';
     email.focus();
     return false;
   }
@@ -228,7 +227,7 @@ button.addEventListener('click', (event) => {
     messageErr.innerHTML = 'Please provide email';
     email.focus();
     return false;
-  } 
+  }
   if (!email.value.includes('@') || !email.value.includes('.')) {
     messageErr.innerHTML = 'Enter a valid email in Lowercase';
     messageErr.classList.add('show');
@@ -245,4 +244,5 @@ button.addEventListener('click', (event) => {
   fullName.value = '';
   email.value = '';
   textarea.value = '';
+  return true;
 });
