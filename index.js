@@ -1,3 +1,4 @@
+// hamburger menu
 const menu = document.querySelector('.menu_mobile');
 const hamburger = document.querySelector('.hamburger');
 const closeIcon = document.querySelector('.close');
@@ -26,6 +27,7 @@ menuItem.forEach((element) => {
   });
 });
 
+// popup window
 const arrProject = [
   {
     name: 'Professional Art Printing Data',
@@ -204,16 +206,15 @@ generateProduct();
 
 // form validation
 const button = document.querySelector('#form_button');
+const contactForm = document.getElementById('contactForm');
+const fullName = document.querySelector('#name');
+const email = document.querySelector('#email');
+const textarea = document.querySelector('#textarea');
+const messageErr = document.querySelector('#message');
+const regex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
 
 button.addEventListener('click', (event) => {
   event.preventDefault();
-
-  const contactForm = document.getElementById('contactForm');
-  const fullName = document.querySelector('#name');
-  const email = document.querySelector('#email');
-  const textarea = document.querySelector('#textarea');
-  const messageErr = document.querySelector('#message');
-  const regex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
 
   if (fullName.value === '') {
     messageErr.innerHTML = 'Please provide your name';
@@ -239,3 +240,23 @@ button.addEventListener('click', (event) => {
     textarea.value = '';
   }
 });
+
+// local storage
+function saveUserData() {
+  const userData = {
+    username: fullName.value,
+    email: email.value,
+    message: textarea.value,
+  };
+
+  localStorage.setItem('userData', JSON.stringify(userData));
+}
+
+fullName.addEventListener('focusout', saveUserData);
+email.addEventListener('focusout', saveUserData);
+textarea.addEventListener('focusout', saveUserData);
+
+const data = JSON.parse(localStorage.getItem('userData')) || {};
+fullName.value = data.username || '';
+email.value = data.email || '';
+textarea.value = data.message || '';
