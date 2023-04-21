@@ -251,19 +251,12 @@ i.close.show {
     margin-bottom: 10px;
   }
 
-  /* .card-body-button:hover {
-    background-color: #ff6b00;
-    border: 1px solid white;
-  } */
-
   /* card section */
 
   .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* height: 400px; */
     margin-top: 55px;
     gap: 12px;
     background-image: url(Images/backgroundImg.png);
@@ -497,8 +490,6 @@ i.close.show {
     border: none;
     gap: 20px;
     order: 2;
-
-    /* transform: translate(10px); */
   }
 
   fieldset:hover {
@@ -552,12 +543,6 @@ i.close.show {
     order: 3;
     margin-top: 15px;
   }
-
-  /* .button:hover {
-    background: #fff5e1;
-    color: #ff6b00;
-    border: 1px solid #ff6b00;
-  } */
 
   .contact-form ul {
     display: flex;
@@ -816,8 +801,6 @@ button:hover {
     justify-content: center;
     align-content: flex-start;
     margin: 10px auto;
-
-    /* border: 2px solid red; */
     height: 100%;
     padding: 10px;
   }
@@ -825,10 +808,6 @@ button:hover {
   div.title {
     display: flex;
   }
-
-  /* article.card {
-    display: block;
-  } */
 
   .social-media {
     display: flex;
@@ -872,6 +851,11 @@ button:hover {
   }
 
   input {
+    display: block;
+    width: 100%;
+  }
+
+  label {
     width: 100%;
   }
 
@@ -910,10 +894,6 @@ button:hover {
   .navbar a {
     margin-left: 35px;
   }
-
-  /* .navbar a:hover {
-    transform: rotate(3.142rad);
-  } */
 
   .navbar h1 {
     margin-left: 60px;

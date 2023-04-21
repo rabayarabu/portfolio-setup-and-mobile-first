@@ -202,45 +202,40 @@ modal.addEventListener('click', (e) => {
 
 generateProduct();
 
+// form validation
 const button = document.querySelector('#form_button');
 
 button.addEventListener('click', (event) => {
   event.preventDefault();
-  // form validation
+
   const contactForm = document.getElementById('contactForm');
   const fullName = document.querySelector('#name');
   const email = document.querySelector('#email');
   const textarea = document.querySelector('#textarea');
   const messageErr = document.querySelector('#message');
-  const checkLower = email.value;
+  const regex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
 
   if (fullName.value === '') {
     messageErr.innerHTML = 'Please provide your name';
     fullName.focus();
-    // return false;
   } else if (email.value === '') {
     messageErr.innerHTML = 'Please provide email';
     email.focus();
-    // return false;
-  } else if (checkLower !== checkLower.toLowerCase()) {
-    messageErr.innerHTML = 'Please use lowercase for email';
+  } else if (!regex.test(email.value)) {
+    messageErr.innerHTML = 'Enter a valid email in lowercase';
     email.focus();
-    // return false;
   } else if (!email.value.includes('@') || !email.value.includes('.')) {
-    messageErr.innerHTML = 'Enter a valid email in Lowercase';
+    messageErr.innerHTML = 'Enter a valid email';
     messageErr.classList.add('show');
     email.focus();
-    // return false;
   } else if (textarea.value === '') {
     messageErr.innerHTML = 'text must be within 500 characters';
     textarea.focus();
-    // return false;
   } else {
     messageErr.innerHTML = 'message sent!';
     contactForm.submit();
     fullName.value = '';
     email.value = '';
     textarea.value = '';
-    // return true;
   }
 });
