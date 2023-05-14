@@ -233,6 +233,14 @@ i.close.show {
     height: 40px;
     background: #fff;
     border: 1px solid #8993a4;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+
+  .css:hover,
+  .css:focus {
+    background-color: #333;
+    color: #fff;
   }
 
   .card-body-button {
