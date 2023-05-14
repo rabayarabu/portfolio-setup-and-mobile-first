@@ -234,6 +234,14 @@ i.close.show {
     height: 40px;
     background: #fff;
     border: 1px solid #8993a4;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+
+  .css:hover,
+  .css:focus {
+    background-color: #333;
+    color: #fff;
   }
 
   .card-body-button {
@@ -266,7 +274,7 @@ i.close.show {
   }
 
   .featureImg {
-    max-width: 100%;
+    width: 500px;
   }
 
   .card h5 {
@@ -313,6 +321,14 @@ i.close.show {
     padding: 10px 6px;
     flex: none;
     flex-grow: 0;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+
+  .list:hover,
+  .list:focus {
+    background-color: #fff;
+    color: #333;
   }
 
   .card-button {
@@ -778,7 +794,13 @@ button:hover {
   }
 
   .featureImg {
-    width: 100%;
+    width: 650px;
+    transition-property: width;
+    transition-duration: 2s;
+  }
+
+  .featureImg:hover {
+    width: 700px;
   }
 
   img.devider1 {
