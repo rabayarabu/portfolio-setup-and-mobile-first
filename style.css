@@ -320,6 +320,14 @@ i.close.show {
     padding: 10px 6px;
     flex: none;
     flex-grow: 0;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+
+  .list:hover,
+  .list:focus {
+    background-color: #fff;
+    color: #333;
   }
 
   .card-button {
