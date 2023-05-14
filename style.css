@@ -265,7 +265,7 @@ i.close.show {
   }
 
   .featureImg {
-    max-width: 100%;
+    width: 500px;
   }
 
   .card h5 {
@@ -777,9 +777,13 @@ button:hover {
   }
 
   .featureImg {
-    width: 100%;
+    width: 650px;
+    transition-property: width;
+    transition-duration: 2s ;
   }
-
+  .featureImg:hover {
+    width: 700px;
+  }
   img.devider1 {
     margin-top: 44px;
     margin-bottom: 82px;
