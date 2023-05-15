@@ -37,7 +37,6 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  padding: 100px;
   height: 100vh;
   background-color: rgba(60, 58, 57, 0.9);
   padding-top: 40px;
@@ -91,7 +90,6 @@ i.close.show {
 
   .navbar a {
     font-family: 'Inter', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
@@ -130,17 +128,14 @@ i.close.show {
     width: 327px;
     height: 27px;
     font-family: "Roboto", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    align-items: center;
     color: #fff5e1;
   }
 
   .headline p {
     font-family: "Poppins", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
@@ -178,10 +173,8 @@ i.close.show {
   .card-body h5 {
     display: flex;
     justify-content: flex-start;
-    flex-flow: row;
     color: #091e42;
     font-family: "Crete Round", sans-serif;
-    font-style: normal;
     font-size: 32px;
     line-height: 44px;
     height: 36px;
@@ -205,7 +198,6 @@ i.close.show {
 
   .card-body p {
     font-family: "Inter", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 34px;
@@ -216,12 +208,10 @@ i.close.show {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0;
     gap: 3px;
     height: 40px;
     background: #fff;
     font-family: "Inter", sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
@@ -320,7 +310,6 @@ i.close.show {
     padding: 10px 6px;
     flex: none;
     flex-grow: 0;
-    text-decoration: none;
     transition: all 0.5s ease-out;
   }
 
@@ -336,9 +325,7 @@ i.close.show {
     color: #fff;
     padding: 17px;
     width: 329px;
-    flex: none;
     order: 3;
-    flex-grow: 0;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -364,7 +351,6 @@ i.close.show {
 
   .about h2 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     color: #ff6b00;
@@ -373,32 +359,22 @@ i.close.show {
     font-size: 60px;
     line-height: 88px;
     letter-spacing: 0.37px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
   }
 
   .about p {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     color: #f4f5f7;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
   }
 
   .about-button {
     width: 156px;
     height: 48px;
     background: #ff6b00;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
     border: none;
     font-weight: 700;
     font-size: 17px;
@@ -427,9 +403,6 @@ i.close.show {
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     margin-top: 100px;
   }
 
@@ -440,7 +413,6 @@ i.close.show {
     padding: 8px 12px;
     gap: 12px;
     font-family: 'Inter', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 43px;
@@ -456,11 +428,9 @@ i.close.show {
 
   .skills {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 10px;
     font-family: 'Inter', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
@@ -558,6 +528,7 @@ i.close.show {
     font-weight: 700;
     order: 3;
     margin-top: 15px;
+    margin-bottom: 30px;
   }
 
   .contact-form ul {
