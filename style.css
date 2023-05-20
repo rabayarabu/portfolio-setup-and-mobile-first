@@ -87,6 +87,13 @@ i.close.show {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation-name: naveffect;
+    animation-duration: 3s;
+  }
+
+  @keyframes naveffect {
+    from { background: #3c3a39; }
+    to { background: #da5828; }
   }
 
   .navbar a {
