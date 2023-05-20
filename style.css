@@ -201,6 +201,7 @@ i.close.show {
     gap: 12px;
     max-width: 500px;
     height: 307px;
+    margin-top: 85px;
   }
 
   .card-body p {
@@ -800,7 +801,7 @@ button:hover {
     gap: 20px;
     justify-content: center;
     align-content: flex-start;
-    margin: 10px auto;
+    margin: -70px auto;
     height: 100%;
     padding: 10px;
   }
