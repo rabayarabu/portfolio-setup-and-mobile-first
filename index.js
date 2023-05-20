@@ -38,7 +38,7 @@ const arrProject = [
     technology: ['html', 'css', 'javascript'],
     btnCard1: 'https://rabayarabu.github.io/Portfolio-setup-and-mobile-first/',
     btnCard2: 'https://github.com/rabayarabu/Portfolio-setup-and-mobile-first',
-    imageUrl: 'images/FeatureImg-todo.png',
+    imageUrl: 'Images/FeatureImg-todo.png',
   },
   {
     name: 'Professional Art Printing Data',
