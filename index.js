@@ -30,6 +30,17 @@ menuItem.forEach((element) => {
 // popup window
 const arrProject = [
   {
+    name: 'To Do list App',
+    nameCard: 'Multi Post Stories',
+    number: 2,
+    Description: 'An application to keep track of your day to day activities',
+    descriptionCard: 'To Do list application helps us by providing proper management of our works.',
+    technology: ['html', 'css', 'javascript'],
+    btnCard1: 'See Live',
+    btnCard2: 'See Source',
+    imageUrl: 'images/FeatureImg-todo.png',
+  },
+  {
     name: 'Professional Art Printing Data',
     nameCard: 'Multi Post Stories',
     number: 1,
@@ -38,17 +49,9 @@ const arrProject = [
     technology: ['html', 'bootstrap', 'ruby', 'Ruby on rails'],
     btnCard1: 'See Live',
     btnCard2: 'See Source',
+    imageUrl: 'Images/FeatureImg.png',
   },
-  {
-    name: 'Professional Art Printing Data 2',
-    nameCard: 'Multi Post Stories',
-    number: 2,
-    Description: "A daily selection of privately personalized reads; no account or sign-ups required,has been the industry's standard",
-    descriptionCard: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technology: ['html', 'bootstrap', 'ruby', 'Ruby on rails'],
-    btnCard1: 'See Live',
-    btnCard2: 'See Source',
-  },
+
   {
     name: 'Professional Art Printing Data 3',
     nameCard: 'Multi Post Stories',
@@ -58,6 +61,7 @@ const arrProject = [
     technology: ['html', 'bootstrap', 'ruby', 'Ruby on rails'],
     btnCard1: 'See Live',
     btnCard2: 'See Source',
+    imageUrl: 'Images/FeatureImg.png',
   },
   {
     name: 'Professional Art Printing Data 4',
@@ -68,6 +72,7 @@ const arrProject = [
     technology: ['html', 'bootstrap', 'ruby'],
     btnCard1: 'See Live',
     btnCard2: 'See Source',
+    imageUrl: 'Images/FeatureImg.png',
   },
   {
     name: 'Professional Art Printing Data 5',
@@ -78,6 +83,7 @@ const arrProject = [
     technology: ['html', 'bootstrap', 'ruby', 'Ruby on rails'],
     btnCard1: 'See Live',
     btnCard2: 'See Source',
+    imageUrl: 'Images/FeatureImg.png',
   },
   {
     name: 'Professional Art Printing Data 6',
@@ -88,7 +94,9 @@ const arrProject = [
     technology: ['html', 'bootstrap', 'ruby', 'Ruby on rails'],
     btnCard1: 'See Live',
     btnCard2: 'See Source',
+    imageUrl: 'Images/FeatureImg.png',
   },
+
 ];
 
 function generateProduct() {
@@ -107,10 +115,10 @@ function generateProduct() {
 }
 
 const generateLatest = function () {
-  for (let i = arrProject.length - 1; i < arrProject.length; i += 1) {
+  for (let i = 0; i < 1; i += 1) {
     containers.innerHTML += `
     <div class="containers-body">
-    <img class="featureImg" src="Images/Img Placeholder.png" alt="featureimage">
+    <img class="featureImg" src="${arrProject[i].imageUrl}" alt="featureimage">
     <div class="card-body">
       <h5>${arrProject[i].nameCard}</h5>
       <p>
@@ -141,7 +149,7 @@ containers.addEventListener('click', (e) => {
         ${search.technology.map((x) => `<li class="tools-li">${x}</li>`).join('')}
       </ul>
       <div class="middle">
-        <img class="featureImg" src="Images/Img Placeholder.png" alt="featureimage">
+        <img class="featureImg" src="${search.imageUrl}" alt="featureimage">
         <div class="center">
           <p class="top-header-p">${search.descriptionCard}
           </p>
@@ -177,7 +185,7 @@ projectsSide.addEventListener('click', (e) => {
         ${search.technology.map((x) => `<li class="tools-li">${x}</li>`).join('')}
       </ul>
       <div class="middle">
-        <img class="featureImg" src="Images/Img Placeholder.png" alt="featureimage">
+        <img class="featureImg" src="${search.imageUrl}" alt="featureimage">
         <div class="center">
           <p class="top-header-p">${search.descriptionCard}
           </p>
