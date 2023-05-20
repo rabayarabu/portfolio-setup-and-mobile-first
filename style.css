@@ -202,6 +202,7 @@ i.close.show {
     gap: 12px;
     max-width: 500px;
     height: 307px;
+    margin-top: 85px;
   }
 
   .card-body p {
@@ -775,10 +776,12 @@ button:hover {
     width: 650px;
     transition-property: width;
     transition-duration: 2s;
+    opacity: 0.5;
   }
 
   .featureImg:hover {
     width: 700px;
+    opacity: 1;
   }
 
   img.devider1 {
@@ -801,7 +804,7 @@ button:hover {
     gap: 20px;
     justify-content: center;
     align-content: flex-start;
-    margin: 10px auto;
+    margin: -70px auto;
     height: 100%;
     padding: 10px;
   }
