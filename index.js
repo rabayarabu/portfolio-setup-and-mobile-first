@@ -36,8 +36,8 @@ const arrProject = [
     Description: 'An application to keep track of your day to day activities',
     descriptionCard: 'To Do list application helps us by providing proper management of our works.',
     technology: ['html', 'css', 'javascript'],
-    btnCard1: 'See Live',
-    btnCard2: 'See Source',
+    btnCard1: 'https://rabayarabu.github.io/Portfolio-setup-and-mobile-first/',
+    btnCard2: 'https://github.com/rabayarabu/Portfolio-setup-and-mobile-first',
     imageUrl: 'images/FeatureImg-todo.png',
   },
   {
@@ -155,8 +155,8 @@ containers.addEventListener('click', (e) => {
           </p>
 
           <div class="buttonGroup">
-            <button type="button" class="buttonGroup_button">See live <img src="Images/Icon.png" alt="icon" class="btn_icon"></button>
-            <button type="button" class="buttonGroup_button">See source <img src="Images/desktopImg/Icon -GitHub.png" alt="GitHubIcon" class="btn_icon"></button>
+            <a href="${search.btnCard1}" class="buttonGroup_button">See live <img src="Images/Icon.png" alt="icon" class="btn_icon"></a>
+            <a href="${search.btnCard2}" class="buttonGroup_button">See source <img src="Images/desktopImg/Icon -GitHub.png" alt="GitHubIcon" class="btn_icon"></a>
           </div>
         </div>
       </div>
