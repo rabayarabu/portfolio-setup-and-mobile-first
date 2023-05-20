@@ -775,10 +775,12 @@ button:hover {
     width: 650px;
     transition-property: width;
     transition-duration: 2s;
+    opacity: 0.5;
   }
 
   .featureImg:hover {
     width: 700px;
+    opacity: 1;
   }
 
   img.devider1 {
