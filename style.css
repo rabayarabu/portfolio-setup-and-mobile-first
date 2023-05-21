@@ -57,7 +57,7 @@ body {
   display: block;
   padding-bottom: 5px;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 0.6em;
   color: #fff5e1;
 }
 
@@ -95,7 +95,7 @@ i.close.show {
     to { background: #da5828; }
   }
 
-  .navbar a {
+  .navbar h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 1.5em;
@@ -742,7 +742,7 @@ button:hover {
   }
 
   .menu_link:hover {
-    font-size: 1rem;
+    font-size: 1em;
   }
 
   article.grid-container {
@@ -900,10 +900,6 @@ button:hover {
 
   .navbar h1 {
     margin-left: 60px;
-  }
-
-  .navbar h1:hover {
-    transform: rotateY(180deg);
   }
 
   button.card4-button {
