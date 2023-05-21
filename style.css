@@ -58,7 +58,7 @@ body {
   display: block;
   padding-bottom: 5px;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 0.6em;
   color: #fff5e1;
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 i.close {
-  font-size: 24px;
+  font-size: 1.5em;
   color: white;
   display: none;
   cursor: pointer;
@@ -96,10 +96,10 @@ i.close.show {
     to { background: #da5828; }
   }
 
-  .navbar a {
+  .navbar h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.5em;
     line-height: 20px;
     color: #fff;
   }
@@ -126,7 +126,7 @@ i.close.show {
   .headline h1 {
     color: #ff6b00;
     font-family: "Crete Round", sans-serif;
-    font-size: 44px;
+    font-size: 3em;
     line-height: 64px;
     letter-spacing: 0.37px;
     width: 230px;
@@ -137,7 +137,7 @@ i.close.show {
     height: 27px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 32px;
     color: #fff5e1;
   }
@@ -145,7 +145,7 @@ i.close.show {
   .headline p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 30px;
     color: #fff;
     margin-top: 10px;
@@ -168,7 +168,7 @@ i.close.show {
   .grid-container h2 {
     color: #1c1a19;
     font-family: "Crete Round", sans-serif;
-    font-size: 40px;
+    font-size: 2.5em;
     line-height: 52px;
     height: 83px;
     margin-top: 100px;
@@ -183,7 +183,7 @@ i.close.show {
     justify-content: flex-start;
     color: #091e42;
     font-family: "Crete Round", sans-serif;
-    font-size: 32px;
+    font-size: 2em;
     line-height: 44px;
     height: 36px;
   }
@@ -208,7 +208,7 @@ i.close.show {
   .card-body p {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 34px;
     color: #091e42;
   }
@@ -222,7 +222,7 @@ i.close.show {
     background: #fff;
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1em;
     line-height: 20px;
     color: #091e42;
   }
@@ -252,7 +252,7 @@ i.close.show {
     order: 3;
     flex-grow: 0;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1em;
     border: none;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -280,7 +280,7 @@ i.close.show {
     height: 81px;
     font-family: "Crete Round", sans-serif;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2em;
     line-height: 44px;
     color: #fff;
     flex: none;
@@ -336,7 +336,7 @@ i.close.show {
     width: 329px;
     order: 3;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1em;
     line-height: 24px;
     border: none;
   }
@@ -365,7 +365,7 @@ i.close.show {
     color: #ff6b00;
     font-family: "Crete Round", sans-serif;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 3.5em;
     line-height: 88px;
     letter-spacing: 0.37px;
   }
@@ -376,7 +376,7 @@ i.close.show {
     color: #f4f5f7;
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 24px;
   }
 
@@ -386,7 +386,7 @@ i.close.show {
     background: #ff6b00;
     border: none;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1em;
     letter-spacing: 0.03em;
     color: #fff;
   }
@@ -423,7 +423,7 @@ i.close.show {
     gap: 12px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.5em;
     line-height: 43px;
   }
 
@@ -441,7 +441,7 @@ i.close.show {
     gap: 10px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2em;
     line-height: 44px;
   }
 
@@ -466,7 +466,7 @@ i.close.show {
     align-items: center;
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2em;
     line-height: 44px;
     color: #172b4d;
     text-align: center;
@@ -494,7 +494,7 @@ i.close.show {
   textarea {
     font-style: italic;
     font-family: "Inter", sans-serif;
-    font-size: 15px;
+    font-size: 1em;
     line-height: 24px;
     background-image: url(Images/Container.png);
     width: 306px;
@@ -531,7 +531,7 @@ i.close.show {
     color: #fff;
     border: none;
     font-family: "Inter", sans-serif;
-    font-size: 17px;
+    font-size: 1em;
     line-height: 24px;
     letter-spacing: 0.03em;
     font-weight: 700;
@@ -614,7 +614,7 @@ i.close.show {
 .top-header h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 44px;
 }
 
@@ -627,14 +627,14 @@ i.close.show {
 .tools-li {
   border: 1px solid #dfe1e6;
   padding: 5px 10px;
-  font-size: 13px;
+  font-size: 1em;
   margin: 10px 5px;
 }
 
 .top-header-p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 24px;
   padding: 10px;
 }
@@ -656,7 +656,7 @@ i.close.show {
   background: #ff6b00;
   border: none;
   padding: 12px;
-  font-size: 15px;
+  font-size: 1em;
 }
 
 .hide {
@@ -726,7 +726,7 @@ button:hover {
     flex-direction: row;
     justify-content: flex-start;
     margin-right: 110px;
-    font-size: 15px;
+    font-size: 2rem;
     transition-property: font-size;
   }
 
@@ -743,7 +743,7 @@ button:hover {
   }
 
   .menu_link:hover {
-    font-size: 26px;
+    font-size: 1em;
   }
 
   article.grid-container {
@@ -903,10 +903,6 @@ button:hover {
     margin-left: 60px;
   }
 
-  .navbar h1:hover {
-    transform: rotateY(180deg);
-  }
-
   button.card4-button {
     display: none;
   }
@@ -954,7 +950,7 @@ button:hover {
     font-family: "Inter", sans-serif;
     border: none;
     padding: 12px;
-    font-size: 15px;
+    font-size: 1em;
     cursor: pointer;
   }
 
@@ -963,7 +959,8 @@ button:hover {
   }
 
   .buttonGroup_button:hover {
-    font-size: 13px;
+    background-color: #ff6b00;
+    border: 1px solid white;
   }
 
   .tools {
