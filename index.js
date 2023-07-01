@@ -36,8 +36,8 @@ const arrProject = [
     Description: 'An application to keep track of your day to day activities',
     descriptionCard: 'To Do list application helps us by providing proper management of our works.',
     technology: ['html', 'css', 'javascript'],
-    btnCard1: 'https://rabayarabu.github.io/Portfolio-setup-and-mobile-first/',
-    btnCard2: 'https://github.com/rabayarabu/Portfolio-setup-and-mobile-first',
+    btnCard1: 'https://rabayarabu.github.io/To-Do-List/',
+    btnCard2: 'https://github.com/rabayarabu/To-Do-List',
     imageUrl: 'Images/FeatureImg-todo.png',
   },
   {
