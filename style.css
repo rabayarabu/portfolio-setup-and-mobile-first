@@ -714,7 +714,7 @@ button:hover {
     justify-content: flex-start;
     gap: 5px;
     margin-right: 70px;
-    font-size: .6rem;
+    font-size: 0.6rem;
     transition-property: font-size;
   }
 
