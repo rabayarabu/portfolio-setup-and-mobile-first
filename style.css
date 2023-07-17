@@ -18,13 +18,6 @@ body {
   color: #ff6b00;
 }
 
-.nav {
-  z-index: 10;
-  position: fixed;
-  top: 10px;
-  right: 50px;
-}
-
 .hamburger.hide {
   display: none;
 }
@@ -43,21 +36,12 @@ body {
   padding-left: 40px;
 }
 
-.menu_list {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 40px;
-  height: 100%;
-  padding: 0;
-}
-
 .menu_link {
   border-bottom: 2px solid #f4f5f7;
   display: block;
   padding-bottom: 5px;
   font-weight: 700;
-  font-size: 0.6em;
+  font-size: 2em;
   color: #fff5e1;
 }
 
@@ -78,7 +62,7 @@ i.close.show {
   color: #be9595;
 }
 
-@media only screen and (min-width: 350px) {
+@media only screen and (min-width: 375px) {
   /* navbar styles */
   .navbar {
     padding: 1rem 1.5rem;
@@ -128,7 +112,7 @@ i.close.show {
     font-size: 3em;
     line-height: 64px;
     letter-spacing: 0.37px;
-    width: 230px;
+    width: 245px;
   }
 
   .headline h4 {
@@ -171,10 +155,12 @@ i.close.show {
     line-height: 52px;
     height: 83px;
     margin-top: 100px;
+    margin-left: 20px;
   }
 
   .devider1 {
     margin-bottom: 70px;
+    margin-left: 10px;
   }
 
   .card-body h5 {
@@ -202,6 +188,7 @@ i.close.show {
     max-width: 500px;
     height: 307px;
     margin-top: 85px;
+    margin-left: 20px;
   }
 
   .card-body p {
@@ -271,7 +258,7 @@ i.close.show {
   }
 
   .featureImg {
-    width: 500px;
+    width: 297px;
   }
 
   .card h5 {
@@ -380,6 +367,9 @@ i.close.show {
   }
 
   .about-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 156px;
     height: 48px;
     background: #ff6b00;
@@ -628,6 +618,8 @@ i.close.show {
   padding: 5px 10px;
   font-size: 1em;
   margin: 10px 5px;
+  height: 30px;
+  width: 100px;
 }
 
 .top-header-p {
@@ -682,10 +674,6 @@ button:hover {
     margin-bottom: 80px;
   }
 
-  .menu_list {
-    gap: 5px;
-  }
-
   .menu_mobile {
     display: flex;
     flex-direction: column;
@@ -724,8 +712,9 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-right: 110px;
-    font-size: 2rem;
+    gap: 5px;
+    margin-right: 70px;
+    font-size: .6rem;
     transition-property: font-size;
   }
 
@@ -742,7 +731,7 @@ button:hover {
   }
 
   .menu_link:hover {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   article.grid-container {
