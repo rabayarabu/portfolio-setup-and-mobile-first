@@ -188,7 +188,7 @@ i.close.show {
     gap: 12px;
     max-width: 500px;
     height: 307px;
-    margin-top: 85px;
+    margin-top: 35px;
     margin-left: 20px;
   }
 
@@ -755,21 +755,21 @@ button:hover {
 
   div.projects {
     max-width: 1250px;
-    margin: -31px auto 20px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
   }
 
   .featureImg {
-    width: 650px;
+    width: 500px;
     transition-property: width;
     transition-duration: 2s;
     opacity: 0.5;
+    margin-top: 25px;
   }
 
   .featureImg:hover {
-    width: 700px;
+    width: 550px;
     opacity: 1;
   }
 
