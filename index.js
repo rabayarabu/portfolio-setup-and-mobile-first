@@ -31,14 +31,14 @@ menuItem.forEach((element) => {
 const arrProject = [
   {
     name: 'To Do list App',
-    nameCard: 'Multi Post Stories',
+    nameCard: 'Online Conference',
     number: 2,
     Description: 'An application to keep track of your day to day activities',
-    descriptionCard: 'To Do list application helps us by providing proper management of our works.',
+    descriptionCard: 'This project is based on an online website for a conference called RR International Summit 2023. By the end of this month, this conference will take place in Dhaka, Bangladesh for people all over the world.',
     technology: ['html', 'css', 'javascript'],
-    btnCard1: 'https://rabayarabu.github.io/To-Do-List/',
-    btnCard2: 'https://github.com/rabayarabu/To-Do-List',
-    imageUrl: 'Images/FeatureImg-todo.png',
+    btnCard1: 'https://rabayarabu.github.io/capstone-1/',
+    btnCard2: 'https://github.com/rabayarabu/capstone-1',
+    imageUrl: 'Images/onlineconference.jpg',
   },
   {
     name: 'Professional Art Printing Data',
