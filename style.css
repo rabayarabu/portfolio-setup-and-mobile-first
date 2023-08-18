@@ -66,6 +66,8 @@ i.close.show {
 @media only screen and (min-width: 375px) {
   /* navbar styles */
   .navbar {
+    position: fixed;
+    width: 100%;
     padding: 1rem 1.5rem;
     background: #3c3a39;
     display: flex;
@@ -184,12 +186,10 @@ i.close.show {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
     gap: 12px;
-    max-width: 500px;
-    height: 307px;
     margin-top: 35px;
     margin-left: 20px;
+    margin-right: 100px;
   }
 
   .card-body p {
@@ -260,6 +260,7 @@ i.close.show {
 
   .featureImg {
     width: 297px;
+    margin-left: 37px;
   }
 
   .card h5 {
@@ -761,11 +762,12 @@ button:hover {
   }
 
   .featureImg {
-    width: 500px;
+    width: 620px;
     transition-property: width;
     transition-duration: 2s;
     opacity: 0.5;
     margin-top: 25px;
+    margin-left: 130px;
   }
 
   .featureImg:hover {
@@ -780,26 +782,15 @@ button:hover {
     margin-left: 10px;
   }
 
-  .containers {
-    margin-bottom: 20px;
-    height: auto;
-    position: static;
-  }
-
-  .containers-body {
-    max-width: 1250px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  div.containers-body {
+    display: flex;
     justify-content: center;
-    align-content: flex-start;
-    margin: -70px auto;
-    height: 100%;
-    padding: 10px;
   }
 
   div.title {
     display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 
   .social-media {
