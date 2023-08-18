@@ -566,6 +566,7 @@ i.close.show {
     padding-top: 50px;
   }
 }
+
 /* popup section */
 .popup {
   position: fixed;
@@ -783,7 +784,6 @@ button:hover {
   div.containers-body {
     display: flex;
     justify-content: center;
-    
   }
 
   div.title {
