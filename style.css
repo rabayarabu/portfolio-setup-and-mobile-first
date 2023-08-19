@@ -68,7 +68,7 @@ i.close.show {
     position: fixed;
     width: 100%;
     padding: 1rem 1.5rem;
-    background: hsl(216, 48%, 19%);
+    background: #ff6b00;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -665,6 +665,7 @@ button:hover {
     background-repeat: no-repeat;
     background-position: center;
     padding: 240px 150px;
+    /* background-color: #999275; */
   }
 
   .menu_mobile {
