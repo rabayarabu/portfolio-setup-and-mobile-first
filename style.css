@@ -68,9 +68,9 @@ i.close.show {
     position: fixed;
     width: 100%;
     padding: 1rem 1.5rem;
-    background: #3c3a39;
+    background: hsl(216, 48%, 19%);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     animation-name: naveffect;
     animation-duration: 3s;
@@ -94,22 +94,15 @@ i.close.show {
   }
 
   /* headline styles */
-  .headline {
-    background-image: url(Images/Group.png);
-    background-position-y: -10%;
-    background-color: #1c1a19;
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    max-width: 100%;
-  }
 
-  .introduction {
-    text-align: left;
-    padding: 100px 20px;
+  .headline {
+    background-image: url(Images/rabu.png);
+    background-repeat: no-repeat;
+    padding: 300px 50px;
   }
 
   .headline h1 {
-    color: #ff6b00;
+    color: #2c9cc5;
     font-family: "Crete Round", sans-serif;
     font-size: 3em;
     line-height: 64px;
@@ -118,13 +111,11 @@ i.close.show {
   }
 
   .headline h4 {
-    width: 327px;
-    height: 27px;
+    position: relative;
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
     font-size: 1.5em;
-    line-height: 32px;
-    color: #fff5e1;
+    color: #2c9cc5;
+    padding-bottom: 60px;
   }
 
   .headline p {
@@ -132,7 +123,7 @@ i.close.show {
     font-weight: 400;
     font-size: 1em;
     line-height: 30px;
-    color: #fff;
+    color: #2c9cc5;
     margin-top: 10px;
   }
 
@@ -560,6 +551,7 @@ i.close.show {
   }
 
   #image-icons {
+    width: 40px;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -668,11 +660,11 @@ button:hover {
 @media only screen and (min-width: 768px) {
   /* headline styles */
   section.headline {
-    background-image: url(Images/Illustration-header@2x.svg);
+    background-size: 900px;
+    background-image: url(Images/rabu.png);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 580px;
-    margin-bottom: 80px;
+    background-position: center;
+    padding: 240px 150px;
   }
 
   .menu_mobile {
@@ -688,13 +680,6 @@ button:hover {
   #image-icons {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding-top: 50px;
-  }
-
-  .introduction {
-    position: relative;
-    padding: 200px 20px;
   }
 
   .title-header {
@@ -714,7 +699,6 @@ button:hover {
     flex-direction: row;
     justify-content: flex-start;
     gap: 5px;
-    margin-right: 70px;
     font-size: 0.6rem;
     transition-property: font-size;
   }
@@ -871,7 +855,7 @@ button:hover {
   }
 
   .navbar {
-    height: 50px;
+    height: 80px;
   }
 
   .navbar a {
