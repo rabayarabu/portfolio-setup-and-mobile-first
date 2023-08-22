@@ -22,8 +22,25 @@ body {
   display: none;
 }
 
+
+.menu_mobile.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  gap: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #3c3a39;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 50px;
+}
+
+
 .menu_link {
-  border-bottom: 2px solid #f4f5f7;
+  border-bottom: 2px solid #6f6c6b;
   display: block;
   padding-bottom: 5px;
   font-weight: 700;
