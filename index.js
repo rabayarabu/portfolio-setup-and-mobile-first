@@ -5,8 +5,8 @@ const closeIcon = document.querySelector('.close');
 const menuItem = document.querySelectorAll('.menu_link');
 const projectsSide = document.getElementById('projects');
 const modal = document.getElementById('popup');
-
 const containers = document.getElementById('containers');
+
 hamburger.addEventListener('click', () => {
   menu.classList.toggle('active');
   hamburger.classList.toggle('hide');
