@@ -22,7 +22,6 @@ body {
   display: none;
 }
 
-
 .menu_mobile.active {
   display: flex;
   flex-direction: column;
@@ -37,7 +36,6 @@ body {
   padding-left: 40px;
   padding-right: 50px;
 }
-
 
 .menu_link {
   border-bottom: 2px solid #6f6c6b;
@@ -241,7 +239,6 @@ i.close.show {
     background-position: center;
     width: 362px;
   }
-
 
   .featureImg {
     width: 297px;
