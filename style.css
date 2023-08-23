@@ -73,16 +73,8 @@ i.close.show {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: naveffect;
-    animation-duration: 3s;
-
-    /* box-shadow: -1em 0 .4em olive; */
   }
 
-  @keyframes naveffect {
-    from { background: #3c3a39; }
-    to { background: #da5828; }
-  }
 
   .navbar h1 {
     font-family: 'Inter', sans-serif;
