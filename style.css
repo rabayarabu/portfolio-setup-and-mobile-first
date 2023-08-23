@@ -75,7 +75,6 @@ i.close.show {
     align-items: center;
   }
 
-
   .navbar h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -674,13 +673,14 @@ button:hover {
     flex-direction: row;
     justify-content: flex-start;
     gap: 5px;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     transition-property: font-size;
     box-shadow:
       inset 0 -6em 6em rgba(0, 0, 0, 0.1),
       0 0 0 2px rgb(17, 16, 16),
       0.6em 0.6em 2em rgba(237, 220, 220, 0.3);
     padding: 15px 160px;
+    border-radius: 10px;
   }
 
   .menu_link {
@@ -696,7 +696,7 @@ button:hover {
   }
 
   .menu_link:hover {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   article.grid-container h2 {
