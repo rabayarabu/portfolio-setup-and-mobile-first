@@ -69,7 +69,6 @@ i.close.show {
     position: fixed;
     width: 100%;
     padding: 1rem 1.5rem;
-    background: #020110;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,9 +89,8 @@ i.close.show {
   /* headline styles */
 
   .headline {
-    background-image: url(Images/rabu.png);
-    background-repeat: no-repeat;
     padding: 220px 50px;
+    background: linear-gradient(to right,hsl(0deg 0% 13% / 73%),rgb(228, 158, 130));
   }
 
   .headline h1 {
@@ -157,9 +155,8 @@ i.close.show {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-    margin-top: 35px;
     margin-left: 40px;
-    margin-right: 100px;
+    width: 400px;
   }
 
   .card-body p {
@@ -639,10 +636,8 @@ button:hover {
 @media only screen and (min-width: 768px) {
   /* headline styles */
   section.headline {
-    background-size: 600px;
-    background-image: url(Images/rabu.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(to right,hsl(0deg 0% 13% / 73%),rgb(228, 158, 130));
+    height: 85vh;
   }
 
   #image-icons {
@@ -668,13 +663,14 @@ button:hover {
     justify-content: flex-start;
     gap: 5px;
     font-size: 0.6rem;
-    transition-property: font-size;
+    transition-property: color;
     box-shadow:
       inset 0 -6em 6em rgba(0, 0, 0, 0.1),
       0 0 0 2px rgb(17, 16, 16),
       0.6em 0.6em 2em rgba(237, 220, 220, 0.3);
     padding: 15px 160px;
     border-radius: 10px;
+    color: #f4f5f7;
   }
 
   .menu_link {
@@ -690,7 +686,9 @@ button:hover {
   }
 
   .menu_link:hover {
-    font-size: 1.4rem;
+    color: #12223d;
+    text-decoration: underline;
+    
   }
 
   article.grid-container h2 {
@@ -713,14 +711,13 @@ button:hover {
   }
 
   .featureImg {
-    width: 620px;
+    width: 700px;
     transition-property: width;
     transition-duration: 2s;
-    margin-left: 130px;
   }
 
   .featureImg:hover {
-    width: 700px;
+    width: 800px;
     opacity: 1;
   }
 
@@ -734,6 +731,8 @@ button:hover {
   div.containers-body {
     display: flex;
     justify-content: center;
+    height: 60vh;
+    padding: 20px 50px;
   }
 
   div.title {
