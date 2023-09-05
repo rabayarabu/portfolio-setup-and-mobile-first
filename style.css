@@ -31,19 +31,21 @@ body {
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: #3c3a39;
+  background-color: #cac3bf;
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 50px;
 }
 
 .menu_link {
-  border-bottom: 2px solid #6f6c6b;
   display: block;
-  padding-bottom: 5px;
+  padding: 10px 15px;
   font-weight: 700;
-  font-size: 2em;
-  color: #fff5e1;
+  font-size: 2.2em;
+  color: #11100d;
+  box-shadow:
+  inset 0 2em 0em rgb(227, 187, 175), 0 0 0 1px rgb(187, 131, 131), 0.6em 0.6em 2em rgba(244, 236, 236, 0.863);
+      border-radius: 10px;
 }
 
 .envelope {
@@ -664,13 +666,9 @@ button:hover {
     gap: 5px;
     font-size: 0.6rem;
     transition-property: color;
-    box-shadow:
-      inset 0 -6em 6em rgba(0, 0, 0, 0.1),
-      0 0 0 2px rgb(17, 16, 16),
-      0.6em 0.6em 2em rgba(237, 220, 220, 0.3);
     padding: 15px 160px;
     border-radius: 10px;
-    color: #f4f5f7;
+    color: #0c0f16;
   }
 
   .menu_link {
@@ -686,9 +684,7 @@ button:hover {
   }
 
   .menu_link:hover {
-    color: #12223d;
-    text-decoration: underline;
-    
+    color: #ab522f;
   }
 
   article.grid-container h2 {
