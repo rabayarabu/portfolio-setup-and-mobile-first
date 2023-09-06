@@ -43,9 +43,7 @@ body {
   font-weight: 700;
   font-size: 2.2em;
   color: #11100d;
-  box-shadow:
-  inset 0 2em 0em rgb(227, 187, 175), 0 0 0 1px rgb(187, 131, 131), 0.6em 0.6em 2em rgba(244, 236, 236, 0.863);
-      border-radius: 10px;
+  /* */
 }
 
 .envelope {
@@ -74,6 +72,8 @@ i.close.show {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow:
+    inset 0 5em 3em rgb(227, 187, 175), 0 0 0 -21px rgb(187, 131, 131), 0.6em 0.6em 3em rgba(244, 236, 236, 0.863);
   }
 
   .navbar h1 {
@@ -220,12 +220,13 @@ i.close.show {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 55px;
+    margin-top: 15px;
     gap: 12px;
     background-image: url(Images/backgroundImg.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 362px;
+    height: 40vh;
   }
 
   .featureImg {
@@ -639,9 +640,11 @@ button:hover {
   /* headline styles */
   section.headline {
     background: linear-gradient(to right,hsl(0deg 0% 13% / 73%),rgb(228, 158, 130));
-    height: 85vh;
+    height: 100vh;
+    background-image: url(Images/theme.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-
   #image-icons {
     display: flex;
     flex-direction: column;
@@ -699,17 +702,20 @@ button:hover {
   }
 
   div.projects {
-    max-width: 1250px;
+    display: flex;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 10px;
-    padding: 50px;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    width: 70%;
+    height: 100vh;
+    margin-top: 100px;
+    
   }
 
   .featureImg {
     width: 700px;
     transition-property: width;
     transition-duration: 2s;
+    isolation: initial;
   }
 
   .featureImg:hover {
@@ -728,13 +734,14 @@ button:hover {
     display: flex;
     justify-content: center;
     height: 60vh;
-    padding: 20px 50px;
+    padding: 25px 90px;
   }
 
   div.title {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-top: 65px;
   }
 
   .social-media {
@@ -747,6 +754,8 @@ button:hover {
     display: flex;
     justify-content: center;
     gap: 165px;
+    padding: 50px;
+    height: 100vh;
   }
 
   ul.frame {
@@ -756,10 +765,8 @@ button:hover {
   .contact-form {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 50px 0;
+    padding: 70px 130px;
     gap: 24px;
-    max-width: 1200px;
-    margin: 100px auto;
     justify-content: space-between;
   }
 
@@ -780,15 +787,15 @@ button:hover {
 
   input {
     display: block;
-    width: 100%;
+    width: 85%;
   }
 
   label {
-    width: 100%;
+    width: 85%;
   }
 
   textarea {
-    width: 100%;
+    width: 72%;
   }
 
   button.card1-button {
@@ -805,6 +812,7 @@ button:hover {
     background-repeat: no-repeat;
     background-size: 750px;
     background-position: right;
+    height: 75vh;
   }
 
   section.about h2 {
