@@ -13,7 +13,10 @@
 body {
   overflow-x: hidden;
 }
-
+img,
+.darkmode-ignore {
+  isolation:initial;
+}
 #message {
   color: #ff6b00;
 }
@@ -69,7 +72,7 @@ i.close.show {
     position: fixed;
     width: 100%;
     padding: 1rem 1.5rem;
-    background: #020110;
+    background: #171531;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +102,7 @@ i.close.show {
   /* headline styles */
 
   .headline {
-    background-image: url(Images/rabu.png);
+    background-image: url(Images/backgroundimg.avif);
     background-repeat: no-repeat;
     padding: 300px 50px;
   }
@@ -651,8 +654,8 @@ button:hover {
 @media only screen and (min-width: 768px) {
   /* headline styles */
   section.headline {
-    background-size: 600px;
-    background-image: url(Images/rabu.png);
+    background-size: 100%;
+    background-image: url(Images/backgroundimg.avif);
     background-repeat: no-repeat;
     background-position: center;
     padding: 240px 400px;
@@ -682,12 +685,7 @@ button:hover {
     flex-direction: row;
     justify-content: flex-start;
     gap: 5px;
-    font-size: 0.5rem;
-    transition-property: font-size;
-    box-shadow:
-      inset 0 -6em 6em rgba(0, 0, 0, 0.1),
-      0 0 0 2px rgb(17, 16, 16),
-      0.6em 0.6em 2em rgba(237, 220, 220, 0.3);
+    font-size: .6rem;
     padding: 15px 160px;
   }
 
@@ -701,10 +699,6 @@ button:hover {
 
   .hamburger {
     display: none;
-  }
-
-  .menu_link:hover {
-    font-size: 1.2rem;
   }
 
   article.grid-container h2 {
