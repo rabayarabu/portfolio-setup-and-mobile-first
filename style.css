@@ -140,7 +140,7 @@ i.close.show {
     margin: 30px auto 20px auto;
     display: grid;
     grid-template-columns: 1fr;
-    padding: 75px 100px;
+    margin-left: 20px;
   }
 
   .grid-container h2 {
@@ -717,6 +717,7 @@ button:hover {
     max-width: 1250px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 75px 100px;
   }
 
   .featureImg {
