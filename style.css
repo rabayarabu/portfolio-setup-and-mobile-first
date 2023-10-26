@@ -140,6 +140,7 @@ i.close.show {
     margin: 30px auto 20px auto;
     display: grid;
     grid-template-columns: 1fr;
+    padding: 75px 100px;
   }
 
   .grid-container h2 {
@@ -235,7 +236,7 @@ i.close.show {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 55px;
+    margin-top: 15px;
     gap: 12px;
     background-image: url(Images/backgroundImg.png);
     background-repeat: no-repeat;
@@ -716,7 +717,6 @@ button:hover {
     max-width: 1250px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 10px;
   }
 
   .featureImg {
@@ -743,12 +743,17 @@ button:hover {
   div.containers-body {
     display: flex;
     justify-content: center;
+    padding: 25px 85px;
+    height: 400px;
   }
-
+.grid-container {
+  padding: 20px 30px;
+}
   div.title {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-top: 80px;
   }
 
   .social-media {
@@ -761,6 +766,7 @@ button:hover {
     display: flex;
     justify-content: center;
     gap: 165px;
+    padding: 75px 40px;
   }
 
   ul.frame {
@@ -770,7 +776,7 @@ button:hover {
   .contact-form {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 50px 0;
+    padding: 0px 100px;
     gap: 24px;
     max-width: 1200px;
     margin: 100px auto;
@@ -819,6 +825,7 @@ button:hover {
     background-repeat: no-repeat;
     background-size: 750px;
     background-position: right;
+    padding: 170px 95px;
   }
 
   section.about h2 {
