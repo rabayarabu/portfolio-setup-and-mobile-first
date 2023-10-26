@@ -718,6 +718,7 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     padding: 75px 100px;
+    margin-left: 145px;
   }
 
   .featureImg {
