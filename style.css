@@ -722,7 +722,7 @@ button:hover {
   article.grid-container h2 {
     display: flex;
     align-items: center;
-    margin-top: 0 !important;
+    margin-top: 50px;
   }
 
   div.devider1 {
@@ -753,7 +753,7 @@ button:hover {
   }
 
   img.devider1 {
-    margin-top: 44px;
+    margin-top: 90px;
     margin-bottom: 82px;
     width: 600px;
     margin-left: 10px;
