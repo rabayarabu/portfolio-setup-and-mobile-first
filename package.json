@@ -1,32 +1,41 @@
 {
   "name": "portfolio-setup-and-mobile-first",
-  "version": "1.0.0",
-  "description": "- [📖 About the Project](#about-project)\r   - [🛠 Built With](#built-with)\r     - [Tech Stack](#tech-stack)\r     - [Key Features](#key-features)\r   - [🚀 Live Demo](#live-demo)\r - [💻 Getting Started](#getting-started)\r   - [Setup](#setup)\r   - [Prerequisites](#prerequisites)\r   - [Install](#install)\r   - [Usage](#usage)\r   - [Run tests](#run-tests)\r   - [Deployment](#triangular_flag_on_post-deployment)\r - [👥 Authors](#authors)\r - [🔭 Future Features](#future-features)\r - [🤝 Contributing](#contributing)\r - [⭐️ Show your support](#support)\r - [🙏 Acknowledgements](#acknowledgements)\r - [❓ FAQ (OPTIONAL)](#faq)\r - [📝 License](#license)",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.17",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "start": "npm start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rabayarabu/Portfolio-setup-and-mobile-first.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rabayarabu/Portfolio-setup-and-mobile-first/issues"
-  },
-  "homepage": "https://github.com/rabayarabu/Portfolio-setup-and-mobile-first#readme",
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.27.5",
-    "hint": "^2.0.0",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
