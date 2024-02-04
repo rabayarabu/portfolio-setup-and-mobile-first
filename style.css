@@ -21,8 +21,8 @@ img,
   color: #ff6b00;
 }
 .welcome {
-  width: 320px;
-  height: 180px;
+  width: 1200px;
+  height: 60vh;
   opacity: .8;
 }
 .hamburger.hide {
@@ -88,7 +88,7 @@ i.close.show {
 
   @keyframes naveffect {
     from { background: #3c3a39; }
-    to { background: #da5828; }
+    to { background: #52433d; }
   }
 
   .navbar h1 {
@@ -110,7 +110,7 @@ i.close.show {
   }
 
   .headline h1 {
-    color: #2c9cc5;
+    color: #0a1012;
     font-family: "Crete Round", sans-serif;
     font-size: 3em;
     line-height: 64px;
@@ -122,7 +122,7 @@ i.close.show {
     position: relative;
     font-family: "Roboto", sans-serif;
     font-size: 1.5em;
-    color: #41e9e1;
+    color: #2d3131;
   
   }
 
@@ -858,6 +858,7 @@ button:hover {
   .navbar {
     height: 80px;
     background-color: #0b141196;
+    box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.2), 0 6px 20px 0 rgba(13, 12, 12, 0.19);
     z-index: 1;
   }
 
