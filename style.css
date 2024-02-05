@@ -20,10 +20,17 @@ img,
 #message {
   color: #fc6b03;
 }
+/* #position {
+  position: absolute;
+  color: floralwhite;
+  top: 30%;
+  left: 68%;
+} */
 .welcome {
-  width: 320px;
-  height: 180px;
+  width: 1200px;
+  height: 60vh;
   opacity: .8;
+  border-radius: 10%;
 }
 .hamburger.hide {
   display: none;
@@ -78,7 +85,7 @@ i.close.show {
     padding: 1rem 1.5rem;
     background: #257a5f96;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     animation-name: naveffect;
     animation-duration: 3s;
@@ -88,7 +95,7 @@ i.close.show {
 
   @keyframes naveffect {
     from { background: #3c3a39; }
-    to { background: #da5828; }
+    to { background: #52433d; }
   }
 
   .navbar h1 {
@@ -110,7 +117,7 @@ i.close.show {
   }
 
   .headline h1 {
-    color: #2c9cc5;
+    color: #0a1012;
     font-family: "Crete Round", sans-serif;
     font-size: 3em;
     line-height: 64px;
@@ -122,7 +129,7 @@ i.close.show {
     position: relative;
     font-family: "Roboto", sans-serif;
     font-size: 1.5em;
-    color: #41e9e1;
+    color: #2d3131;
   
   }
 
@@ -553,6 +560,7 @@ i.close.show {
     flex-direction: row;
     gap: 20px;
     padding-top: 50px;
+
   }
 }
 
@@ -674,15 +682,20 @@ button:hover {
     margin-left: 30px;
   }
   #image-icons {
+    position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    gap: 10px;
     margin-bottom: 55px;
+    transition: transform .2s;
+    left: 0;
     
   }
   #image-icons img:hover {
     color: #dbd8d7;
+    transform: scale(1.5);
   }
   .title-header {
     max-width: 400px;
@@ -710,6 +723,8 @@ button:hover {
   }
   .menu_link:hover {
     color: white;
+    text-decoration: underline;
+    text-decoration-color: #dbd8d7;
   }
   .envelope {
     display: block;
@@ -857,7 +872,8 @@ button:hover {
 
   .navbar {
     height: 80px;
-    background-color: #257a5f96;
+    background-color: #0b141196;
+    box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.2), 0 6px 20px 0 rgba(13, 12, 12, 0.19);
     z-index: 1;
   }
 
