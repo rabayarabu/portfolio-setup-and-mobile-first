@@ -553,6 +553,7 @@ i.close.show {
     flex-direction: row;
     gap: 20px;
     padding-top: 50px;
+
   }
 }
 
@@ -679,10 +680,12 @@ button:hover {
     align-items: center;
     gap: 0;
     margin-bottom: 55px;
+    transition: transform .2s;
     
   }
   #image-icons img:hover {
     color: #dbd8d7;
+    transform: scale(1.5);
   }
   .title-header {
     max-width: 400px;
