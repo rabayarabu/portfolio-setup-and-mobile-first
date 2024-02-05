@@ -20,10 +20,17 @@ img,
 #message {
   color: #ff6b00;
 }
+/* #position {
+  position: absolute;
+  color: floralwhite;
+  top: 30%;
+  left: 68%;
+} */
 .welcome {
   width: 1200px;
   height: 60vh;
   opacity: .8;
+  border-radius: 10%;
 }
 .hamburger.hide {
   display: none;
@@ -78,7 +85,7 @@ i.close.show {
     padding: 1rem 1.5rem;
     background: #257a5f96;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     animation-name: naveffect;
     animation-duration: 3s;
@@ -675,12 +682,15 @@ button:hover {
     margin-left: 30px;
   }
   #image-icons {
+    position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    gap: 10px;
     margin-bottom: 55px;
     transition: transform .2s;
+    left: 0;
     
   }
   #image-icons img:hover {
