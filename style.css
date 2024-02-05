@@ -723,6 +723,8 @@ button:hover {
   }
   .menu_link:hover {
     color: white;
+    text-decoration: underline;
+    text-decoration-color: #dbd8d7;
   }
   .envelope {
     display: block;
